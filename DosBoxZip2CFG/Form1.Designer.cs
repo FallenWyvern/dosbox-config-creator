@@ -29,20 +29,21 @@ namespace DosBoxZip2CFG
         /// </summary>
         private void InitializeComponent()
         {
-            this.panel1 = new System.Windows.Forms.Panel();
+            this.components = new System.ComponentModel.Container();
+            this.zipDropZone = new System.Windows.Forms.Panel();
             this.label5 = new System.Windows.Forms.Label();
-            this.listBox1 = new System.Windows.Forms.ListBox();
-            this.listBox2 = new System.Windows.Forms.ListBox();
+            this.filesList = new System.Windows.Forms.ListBox();
+            this.executableList = new System.Windows.Forms.ListBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.listBox3 = new System.Windows.Forms.ListBox();
-            this.richTextBox1 = new System.Windows.Forms.RichTextBox();
-            this.button1 = new System.Windows.Forms.Button();
+            this.isoList = new System.Windows.Forms.ListBox();
+            this.configFileOutput = new System.Windows.Forms.RichTextBox();
+            this.createConfigButton = new System.Windows.Forms.Button();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
-            this.tabControl1 = new System.Windows.Forms.TabControl();
+            this.configSettings = new System.Windows.Forms.TabControl();
             this.Core = new System.Windows.Forms.TabPage();
             this.label6 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
@@ -194,8 +195,9 @@ namespace DosBoxZip2CFG
             this.ipxEnable = new System.Windows.Forms.CheckBox();
             this.useScanCodesLabel = new System.Windows.Forms.Label();
             this.sdlUseScanCodes = new System.Windows.Forms.CheckBox();
-            this.panel1.SuspendLayout();
-            this.tabControl1.SuspendLayout();
+            this.dcctToolTip = new System.Windows.Forms.ToolTip(this.components);
+            this.zipDropZone.SuspendLayout();
+            this.configSettings.SuspendLayout();
             this.Core.SuspendLayout();
             this.Video.SuspendLayout();
             this.Audio.SuspendLayout();
@@ -212,18 +214,18 @@ namespace DosBoxZip2CFG
             this.Speaker.SuspendLayout();
             this.SuspendLayout();
             // 
-            // panel1
+            // zipDropZone
             // 
-            this.panel1.AllowDrop = true;
-            this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.panel1.Controls.Add(this.label5);
-            this.panel1.Location = new System.Drawing.Point(12, 12);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(212, 163);
-            this.panel1.TabIndex = 0;
-            this.panel1.DragDrop += new System.Windows.Forms.DragEventHandler(this.panel1_DragDrop);
-            this.panel1.DragEnter += new System.Windows.Forms.DragEventHandler(this.panel1_DragEnter);
-            this.panel1.DragLeave += new System.EventHandler(this.panel1_DragLeave);
+            this.zipDropZone.AllowDrop = true;
+            this.zipDropZone.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.zipDropZone.Controls.Add(this.label5);
+            this.zipDropZone.Location = new System.Drawing.Point(12, 12);
+            this.zipDropZone.Name = "zipDropZone";
+            this.zipDropZone.Size = new System.Drawing.Size(212, 163);
+            this.zipDropZone.TabIndex = 0;
+            this.zipDropZone.DragDrop += new System.Windows.Forms.DragEventHandler(this.panel1_DragDrop);
+            this.zipDropZone.DragEnter += new System.Windows.Forms.DragEventHandler(this.panel1_DragEnter);
+            this.zipDropZone.DragLeave += new System.EventHandler(this.panel1_DragLeave);
             // 
             // label5
             // 
@@ -234,23 +236,23 @@ namespace DosBoxZip2CFG
             this.label5.TabIndex = 12;
             this.label5.Text = "Drag and Drop Your Zip Here";
             // 
-            // listBox1
+            // filesList
             // 
-            this.listBox1.FormattingEnabled = true;
-            this.listBox1.Location = new System.Drawing.Point(230, 12);
-            this.listBox1.Name = "listBox1";
-            this.listBox1.Size = new System.Drawing.Size(235, 485);
-            this.listBox1.TabIndex = 1;
-            this.listBox1.SelectedIndexChanged += new System.EventHandler(this.listBox1_SelectedIndexChanged);
+            this.filesList.FormattingEnabled = true;
+            this.filesList.Location = new System.Drawing.Point(230, 12);
+            this.filesList.Name = "filesList";
+            this.filesList.Size = new System.Drawing.Size(235, 485);
+            this.filesList.TabIndex = 1;
+            this.filesList.SelectedIndexChanged += new System.EventHandler(this.listBox1_SelectedIndexChanged);
             // 
-            // listBox2
+            // executableList
             // 
-            this.listBox2.FormattingEnabled = true;
-            this.listBox2.Location = new System.Drawing.Point(471, 28);
-            this.listBox2.Name = "listBox2";
-            this.listBox2.Size = new System.Drawing.Size(235, 186);
-            this.listBox2.TabIndex = 2;
-            this.listBox2.SelectedIndexChanged += new System.EventHandler(this.listBox2_SelectedIndexChanged);
+            this.executableList.FormattingEnabled = true;
+            this.executableList.Location = new System.Drawing.Point(471, 28);
+            this.executableList.Name = "executableList";
+            this.executableList.Size = new System.Drawing.Size(235, 186);
+            this.executableList.TabIndex = 2;
+            this.executableList.SelectedIndexChanged += new System.EventHandler(this.listBox2_SelectedIndexChanged);
             // 
             // label1
             // 
@@ -270,32 +272,32 @@ namespace DosBoxZip2CFG
             this.label2.TabIndex = 5;
             this.label2.Text = "Images";
             // 
-            // listBox3
+            // isoList
             // 
-            this.listBox3.FormattingEnabled = true;
-            this.listBox3.Location = new System.Drawing.Point(471, 233);
-            this.listBox3.Name = "listBox3";
-            this.listBox3.Size = new System.Drawing.Size(235, 134);
-            this.listBox3.TabIndex = 4;
-            this.listBox3.SelectedIndexChanged += new System.EventHandler(this.listBox3_SelectedIndexChanged);
+            this.isoList.FormattingEnabled = true;
+            this.isoList.Location = new System.Drawing.Point(471, 233);
+            this.isoList.Name = "isoList";
+            this.isoList.Size = new System.Drawing.Size(235, 134);
+            this.isoList.TabIndex = 4;
+            this.isoList.SelectedIndexChanged += new System.EventHandler(this.listBox3_SelectedIndexChanged);
             // 
-            // richTextBox1
+            // configFileOutput
             // 
-            this.richTextBox1.Location = new System.Drawing.Point(12, 181);
-            this.richTextBox1.Name = "richTextBox1";
-            this.richTextBox1.Size = new System.Drawing.Size(212, 316);
-            this.richTextBox1.TabIndex = 6;
-            this.richTextBox1.Text = "";
+            this.configFileOutput.Location = new System.Drawing.Point(12, 181);
+            this.configFileOutput.Name = "configFileOutput";
+            this.configFileOutput.Size = new System.Drawing.Size(212, 316);
+            this.configFileOutput.TabIndex = 6;
+            this.configFileOutput.Text = "";
             // 
-            // button1
+            // createConfigButton
             // 
-            this.button1.Location = new System.Drawing.Point(471, 469);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(232, 23);
-            this.button1.TabIndex = 7;
-            this.button1.Text = "Create Config";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.createConfigButton.Location = new System.Drawing.Point(471, 469);
+            this.createConfigButton.Name = "createConfigButton";
+            this.createConfigButton.Size = new System.Drawing.Size(232, 23);
+            this.createConfigButton.TabIndex = 7;
+            this.createConfigButton.Text = "Create Config";
+            this.createConfigButton.UseVisualStyleBackColor = true;
+            this.createConfigButton.Click += new System.EventHandler(this.button1_Click);
             // 
             // textBox1
             // 
@@ -330,17 +332,17 @@ namespace DosBoxZip2CFG
             this.label4.Text = "Target ISO";
             this.label4.Click += new System.EventHandler(this.label4_Click);
             // 
-            // tabControl1
+            // configSettings
             // 
-            this.tabControl1.Controls.Add(this.Core);
-            this.tabControl1.Controls.Add(this.Video);
-            this.tabControl1.Controls.Add(this.Audio);
-            this.tabControl1.Controls.Add(this.tabPage1);
-            this.tabControl1.Location = new System.Drawing.Point(712, 28);
-            this.tabControl1.Name = "tabControl1";
-            this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(373, 469);
-            this.tabControl1.TabIndex = 12;
+            this.configSettings.Controls.Add(this.Core);
+            this.configSettings.Controls.Add(this.Video);
+            this.configSettings.Controls.Add(this.Audio);
+            this.configSettings.Controls.Add(this.tabPage1);
+            this.configSettings.Location = new System.Drawing.Point(712, 28);
+            this.configSettings.Name = "configSettings";
+            this.configSettings.SelectedIndex = 0;
+            this.configSettings.Size = new System.Drawing.Size(373, 469);
+            this.configSettings.TabIndex = 12;
             // 
             // Core
             // 
@@ -2180,26 +2182,26 @@ namespace DosBoxZip2CFG
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1084, 540);
             this.Controls.Add(this.label19);
-            this.Controls.Add(this.tabControl1);
+            this.Controls.Add(this.configSettings);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.textBox2);
             this.Controls.Add(this.textBox1);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.richTextBox1);
+            this.Controls.Add(this.createConfigButton);
+            this.Controls.Add(this.configFileOutput);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.listBox3);
+            this.Controls.Add(this.isoList);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.listBox2);
-            this.Controls.Add(this.listBox1);
-            this.Controls.Add(this.panel1);
+            this.Controls.Add(this.executableList);
+            this.Controls.Add(this.filesList);
+            this.Controls.Add(this.zipDropZone);
             this.Name = "Form1";
             this.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Hide;
             this.Text = "DosBOX Config Creation Tool";
             this.Load += new System.EventHandler(this.Form1_Load);
-            this.panel1.ResumeLayout(false);
-            this.panel1.PerformLayout();
-            this.tabControl1.ResumeLayout(false);
+            this.zipDropZone.ResumeLayout(false);
+            this.zipDropZone.PerformLayout();
+            this.configSettings.ResumeLayout(false);
             this.Core.ResumeLayout(false);
             this.Core.PerformLayout();
             this.Video.ResumeLayout(false);
@@ -2228,20 +2230,20 @@ namespace DosBoxZip2CFG
 
         #endregion
 
-        private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.ListBox listBox1;
-        private System.Windows.Forms.ListBox listBox2;
+        private System.Windows.Forms.Panel zipDropZone;
+        private System.Windows.Forms.ListBox filesList;
+        private System.Windows.Forms.ListBox executableList;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.ListBox listBox3;
-        private System.Windows.Forms.RichTextBox richTextBox1;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.ListBox isoList;
+        private System.Windows.Forms.RichTextBox configFileOutput;
+        private System.Windows.Forms.Button createConfigButton;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TabControl tabControl1;
+        private System.Windows.Forms.TabControl configSettings;
         private System.Windows.Forms.TabPage Video;
         private System.Windows.Forms.TabPage Core;
         private System.Windows.Forms.TabPage Audio;
@@ -2393,6 +2395,7 @@ namespace DosBoxZip2CFG
         public System.Windows.Forms.CheckBox joystickTimed;
         private System.Windows.Forms.Label useScanCodesLabel;
         public System.Windows.Forms.CheckBox sdlUseScanCodes;
+        private System.Windows.Forms.ToolTip dcctToolTip;
     }
 }
 

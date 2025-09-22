@@ -29,9 +29,9 @@ namespace DosBoxZip2CFG
             {
                 if (file.ToLower().Contains("zip"))
                 {
-                    listBox1.Items.Clear();
-                    listBox2.Items.Clear();
-                    listBox3.Items.Clear();
+                    filesList.Items.Clear();
+                    executableList.Items.Clear();
+                    isoList.Items.Clear();
                     textBox1.Text = "";
                     textBox2.Text = "";
                     
@@ -42,14 +42,14 @@ namespace DosBoxZip2CFG
 
                         foreach (ZipArchiveEntry fileContents in archive.Entries)
                         {
-                            listBox1.Items.Add(fileContents.FullName);
+                            filesList.Items.Add(fileContents.FullName);
                             if (fileContents.Name.ToLower().Contains("exe") || fileContents.Name.ToLower().Contains("bat") || fileContents.Name.ToLower().Contains("com"))
                             {
-                                listBox2.Items.Add(fileContents.FullName);
+                                executableList.Items.Add(fileContents.FullName);
                             }
                             if (fileContents.Name.ToLower().Contains("iso") || fileContents.Name.ToLower().Contains("bin") || fileContents.Name.ToLower().Contains("cue") || fileContents.Name.ToLower().Contains("img") )
                             {
-                                listBox3.Items.Add(fileContents.FullName);
+                                isoList.Items.Add(fileContents.FullName);
                             }
                         }
                     }
@@ -71,8 +71,8 @@ namespace DosBoxZip2CFG
 
         private void createBAT()
         {            
-            richTextBox1.Text += "@echo off" + Environment.NewLine;
-            richTextBox1.Text += "mount c \"..\"" + Environment.NewLine;
+            configFileOutput.Text += "@echo off" + Environment.NewLine;
+            configFileOutput.Text += "mount c \"..\"" + Environment.NewLine;
 
             if (textBox2.Text.Trim().Length > 3)
             {
@@ -81,11 +81,11 @@ namespace DosBoxZip2CFG
 
                 foreach (string pathPart in isoPath.Split('/'))
                 {
-                    richTextBox1.Text += "cd " + pathPart + Environment.NewLine;
+                    configFileOutput.Text += "cd " + pathPart + Environment.NewLine;
                 }
 
-                richTextBox1.Text += "imgmount d " + isoFile + " -t iso -fs iso" + Environment.NewLine;
-                richTextBox1.Text += "cd/" + Environment.NewLine;
+                configFileOutput.Text += "imgmount d " + isoFile + " -t iso -fs iso" + Environment.NewLine;
+                configFileOutput.Text += "cd/" + Environment.NewLine;
             }
 
             string exePath = textBox1.Text.Substring(0, textBox1.Text.LastIndexOf('/'));
@@ -93,10 +93,10 @@ namespace DosBoxZip2CFG
 
             foreach (string pathPart in exePath.Split('/'))
             {
-                richTextBox1.Text += "cd " + pathPart + Environment.NewLine;
+                configFileOutput.Text += "cd " + pathPart + Environment.NewLine;
             }
 
-            richTextBox1.Text += exeFile + Environment.NewLine;
+            configFileOutput.Text += exeFile + Environment.NewLine;
 
         }
 
@@ -104,20 +104,20 @@ namespace DosBoxZip2CFG
         {
             if (ConfigCreation.target == null) { ConfigCreation.target = this; }
 
-            richTextBox1.Text = "";
+            configFileOutput.Text = "";
             ConfigCreation.CreateConfig();
 
-            if (listBox1.Items.Count > 0)
+            if (filesList.Items.Count > 0)
             {
                 ConfigCreation.CreateAutoExec();
             }
 
             foreach (string configLines in ConfigCreation.ConfigFile)
             {
-                richTextBox1.Text += configLines + Environment.NewLine;
+                configFileOutput.Text += configLines + Environment.NewLine;
             }
 
-            if (listBox1.Items.Count > 0)
+            if (filesList.Items.Count > 0)
             {                
                 createBAT();
             }
@@ -135,12 +135,12 @@ namespace DosBoxZip2CFG
 
         private void listBox2_SelectedIndexChanged(object sender, EventArgs e)
         {
-            textBox1.Text = listBox2.Text;
+            textBox1.Text = executableList.Text;
         }
 
         private void listBox3_SelectedIndexChanged(object sender, EventArgs e)
         {
-            textBox2.Text = listBox3.Text;
+            textBox2.Text = isoList.Text;
         }
 
         private void dosboxMemsize_Scroll(object sender, EventArgs e)
