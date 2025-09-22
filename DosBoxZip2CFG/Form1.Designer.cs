@@ -196,6 +196,8 @@ namespace DosBoxZip2CFG
             this.useScanCodesLabel = new System.Windows.Forms.Label();
             this.sdlUseScanCodes = new System.Windows.Forms.CheckBox();
             this.dcctToolTip = new System.Windows.Forms.ToolTip(this.components);
+            this.save = new System.Windows.Forms.Button();
+            this.insert = new System.Windows.Forms.Button();
             this.zipDropZone.SuspendLayout();
             this.configSettings.SuspendLayout();
             this.Core.SuspendLayout();
@@ -2176,11 +2178,33 @@ namespace DosBoxZip2CFG
             this.sdlUseScanCodes.Text = "Use Scan Codes";
             this.sdlUseScanCodes.UseVisualStyleBackColor = true;
             // 
+            // save
+            // 
+            this.save.Location = new System.Drawing.Point(12, 505);
+            this.save.Name = "save";
+            this.save.Size = new System.Drawing.Size(102, 23);
+            this.save.TabIndex = 14;
+            this.save.Text = "Save Config";
+            this.save.UseVisualStyleBackColor = true;
+            this.save.Click += new System.EventHandler(this.save_Click);
+            // 
+            // insert
+            // 
+            this.insert.Location = new System.Drawing.Point(120, 505);
+            this.insert.Name = "insert";
+            this.insert.Size = new System.Drawing.Size(102, 23);
+            this.insert.TabIndex = 15;
+            this.insert.Text = "Insert Into Zip";
+            this.insert.UseVisualStyleBackColor = true;
+            this.insert.Click += new System.EventHandler(this.insert_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1084, 540);
+            this.Controls.Add(this.insert);
+            this.Controls.Add(this.save);
             this.Controls.Add(this.label19);
             this.Controls.Add(this.configSettings);
             this.Controls.Add(this.label4);
@@ -2396,6 +2420,8 @@ namespace DosBoxZip2CFG
         private System.Windows.Forms.Label useScanCodesLabel;
         public System.Windows.Forms.CheckBox sdlUseScanCodes;
         private System.Windows.Forms.ToolTip dcctToolTip;
+        private System.Windows.Forms.Button save;
+        private System.Windows.Forms.Button insert;
     }
 }
 

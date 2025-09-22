@@ -24,6 +24,7 @@ namespace DosBoxZip2CFG
         {
             var dropped = e.Data.GetData(DataFormats.FileDrop);
             var files = ((string[])dropped);
+            zipFile = "";
 
             foreach (var file in files)
             {
@@ -161,6 +162,49 @@ namespace DosBoxZip2CFG
         private void label15_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void insert_Click(object sender, EventArgs e)
+        {
+            if (zipFile.Length < 1)
+            {
+                return;
+            }
+
+            Savefile(true);
+        }
+
+        private void save_Click(object sender, EventArgs e)
+        {
+            Savefile(false);
+        }
+
+        private void Savefile(bool saveInZip = false)
+        {
+            string exePath = "./";
+            string exeFile = "DOSBOX.exe";
+
+            string sourceFilePath = "./" + exeFile.Split('.')[0] + ".cfg";
+            string entryNameInZip = exePath + "/" + exeFile.Split('.')[0] + ".cfg";
+
+            if (textBox1.Text.Contains('/')) 
+            {
+                exePath = textBox1.Text.Substring(0, textBox1.Text.LastIndexOf('/'));
+                exeFile = textBox1.Text.Split('/')[textBox1.Text.Split('/').Count() - 1];
+
+                sourceFilePath = "./" + exeFile.Split('.')[0] + ".cfg";
+                entryNameInZip = exePath + "/" + exeFile.Split('.')[0] + ".cfg";
+            }
+            
+            System.IO.File.WriteAllText(sourceFilePath, configFileOutput.Text);
+
+            if (saveInZip)
+            {
+                using (ZipArchive archive = ZipFile.Open(zipFile, ZipArchiveMode.Update))
+                {
+                    archive.CreateEntryFromFile(sourceFilePath, entryNameInZip, CompressionLevel.Optimal);
+                }
+            }
         }
     }
 }
