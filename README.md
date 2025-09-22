@@ -1,6 +1,8 @@
 # Tool for creating Dosbox Config Files
 **Disclaimer** This tool is provided with no license. Feel free to do whatever you want with the code here. This code works on my machine (tm) and if you decide to use this code, you're running it at your own risk. 
 
+<img src='https://github.com/FallenWyvern/dosbox-config-creator/blob/main/dosboxconfig.png'/>
+
 ## What is this for?
 This tool is for taking a zipped DOS game, dropping the zip onto this tool, and either save a config file or insert it directly into the zip.
 
