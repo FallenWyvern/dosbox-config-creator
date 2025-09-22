@@ -3,7 +3,6 @@ C:\romm\dosbox-config-creator\DosBoxZip2CFG\bin\Release\DosBoxZip2CFG.exe
 C:\romm\dosbox-config-creator\DosBoxZip2CFG\bin\Release\DosBoxZip2CFG.pdb
 C:\romm\dosbox-config-creator\DosBoxZip2CFG\bin\Release\System.IO.Compression.dll
 C:\romm\dosbox-config-creator\DosBoxZip2CFG\bin\Release\System.IO.Compression.ZipFile.dll
-C:\romm\dosbox-config-creator\DosBoxZip2CFG\obj\Release\DosBoxZip2CFG.csproj.AssemblyReference.cache
 C:\romm\dosbox-config-creator\DosBoxZip2CFG\obj\Release\DosBoxZip2CFG.Form1.resources
 C:\romm\dosbox-config-creator\DosBoxZip2CFG\obj\Release\DosBoxZip2CFG.Properties.Resources.resources
 C:\romm\dosbox-config-creator\DosBoxZip2CFG\obj\Release\DosBoxZip2CFG.csproj.GenerateResource.cache

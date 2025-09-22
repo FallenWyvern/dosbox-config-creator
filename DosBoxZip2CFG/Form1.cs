@@ -184,16 +184,16 @@ namespace DosBoxZip2CFG
             string exePath = "./";
             string exeFile = "DOSBOX.exe";
 
-            string sourceFilePath = "./" + exeFile.Split('.')[0] + ".cfg";
-            string entryNameInZip = exePath + "/" + exeFile.Split('.')[0] + ".cfg";
+            string sourceFilePath = "./" + exeFile.Split('.')[0] + ".conf";
+            string entryNameInZip = exePath + "/" + exeFile.Split('.')[0] + ".conf";
 
             if (textBox1.Text.Contains('/')) 
             {
                 exePath = textBox1.Text.Substring(0, textBox1.Text.LastIndexOf('/'));
                 exeFile = textBox1.Text.Split('/')[textBox1.Text.Split('/').Count() - 1];
 
-                sourceFilePath = "./" + exeFile.Split('.')[0] + ".cfg";
-                entryNameInZip = exePath + "/" + exeFile.Split('.')[0] + ".cfg";
+                sourceFilePath = "./" + exeFile.Split('.')[0] + ".conf";
+                entryNameInZip = exePath + "/" + exeFile.Split('.')[0] + ".conf";
             }
             
             System.IO.File.WriteAllText(sourceFilePath, configFileOutput.Text);
