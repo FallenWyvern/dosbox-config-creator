@@ -9,3 +9,5 @@ This tool is for taking a zipped DOS game, dropping the zip onto this tool, and 
 
 **With a ZIP**: Drag and drop it onto the dropzone in the upper left. The file will be opened, the files inside will be listed in the middle box. Any EXE, COM, and BAT files will go into the Executables list and any ISO, BIN, CUE, or IMG file will be put into the Images list. If you click an Executable, the Target EXE field will update to include it. If you click an Image file, the Target ISO field will update to include it.
 
+## What About The Rest Of This?
+The last third of the application is used to change the various settings in a dosbox config file. Lines that can only take specific options are listed in drop down boxes. Lines that can only take numbers will only allow numbers. Lines that can only be true/false will be checkboxes, and finally anything else will be a text field input. If you don't know what you're doing, just leave these as they are.
