@@ -13,6 +13,8 @@ namespace DosBoxZip2CFG
 {
     public partial class Form1 : Form
     {
+        string zipFile = "";
+
         public Form1()
         {
             InitializeComponent();
@@ -32,9 +34,12 @@ namespace DosBoxZip2CFG
                     listBox3.Items.Clear();
                     textBox1.Text = "";
                     textBox2.Text = "";
-
+                    
                     using (ZipArchive archive = ZipFile.OpenRead(file))
                     {
+                        zipFile = file;
+                        Console.WriteLine("Loaded " + zipFile);
+
                         foreach (ZipArchiveEntry fileContents in archive.Entries)
                         {
                             listBox1.Items.Add(fileContents.FullName);
@@ -97,14 +102,23 @@ namespace DosBoxZip2CFG
 
         private void button1_Click(object sender, EventArgs e)
         {
+            if (ConfigCreation.target == null) { ConfigCreation.target = this; }
+
+            richTextBox1.Text = "";
+            ConfigCreation.CreateConfig();
+
             if (listBox1.Items.Count > 0)
             {
-                richTextBox1.Text = "";
-                ConfigCreation.CreateConfig();
-                foreach (string configLines in ConfigCreation.ConfigFile)
-                {
-                    richTextBox1.Text += configLines + Environment.NewLine;
-                }
+                ConfigCreation.CreateAutoExec();
+            }
+
+            foreach (string configLines in ConfigCreation.ConfigFile)
+            {
+                richTextBox1.Text += configLines + Environment.NewLine;
+            }
+
+            if (listBox1.Items.Count > 0)
+            {                
                 createBAT();
             }
         }
@@ -127,6 +141,26 @@ namespace DosBoxZip2CFG
         private void listBox3_SelectedIndexChanged(object sender, EventArgs e)
         {
             textBox2.Text = listBox3.Text;
+        }
+
+        private void dosboxMemsize_Scroll(object sender, EventArgs e)
+        {
+
+        }
+
+        private void dosboxMemsize_ValueChanged(object sender, EventArgs e)
+        {
+            memSizeScrollerText.Text = dosboxMemsize.Value + " MB";
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+            this.FormBorderStyle = FormBorderStyle.FixedSingle;
+        }
+
+        private void label15_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
