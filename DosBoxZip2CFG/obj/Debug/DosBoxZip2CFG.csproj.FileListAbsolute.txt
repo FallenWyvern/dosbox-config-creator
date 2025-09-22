@@ -1,0 +1,13 @@
+C:\Users\b_hol\source\repos\DosBoxZip2CFG\DosBoxZip2CFG\bin\Debug\DosBoxZip2CFG.exe.config
+C:\Users\b_hol\source\repos\DosBoxZip2CFG\DosBoxZip2CFG\bin\Debug\DosBoxZip2CFG.exe
+C:\Users\b_hol\source\repos\DosBoxZip2CFG\DosBoxZip2CFG\bin\Debug\DosBoxZip2CFG.pdb
+C:\Users\b_hol\source\repos\DosBoxZip2CFG\DosBoxZip2CFG\obj\Debug\DosBoxZip2CFG.csproj.AssemblyReference.cache
+C:\Users\b_hol\source\repos\DosBoxZip2CFG\DosBoxZip2CFG\obj\Debug\DosBoxZip2CFG.Form1.resources
+C:\Users\b_hol\source\repos\DosBoxZip2CFG\DosBoxZip2CFG\obj\Debug\DosBoxZip2CFG.Properties.Resources.resources
+C:\Users\b_hol\source\repos\DosBoxZip2CFG\DosBoxZip2CFG\obj\Debug\DosBoxZip2CFG.csproj.GenerateResource.cache
+C:\Users\b_hol\source\repos\DosBoxZip2CFG\DosBoxZip2CFG\obj\Debug\DosBoxZip2CFG.csproj.CoreCompileInputs.cache
+C:\Users\b_hol\source\repos\DosBoxZip2CFG\DosBoxZip2CFG\obj\Debug\DosBoxZip2CFG.csproj.CopyComplete
+C:\Users\b_hol\source\repos\DosBoxZip2CFG\DosBoxZip2CFG\obj\Debug\DosBoxZip2CFG.exe
+C:\Users\b_hol\source\repos\DosBoxZip2CFG\DosBoxZip2CFG\obj\Debug\DosBoxZip2CFG.pdb
+C:\Users\b_hol\source\repos\DosBoxZip2CFG\DosBoxZip2CFG\bin\Debug\System.IO.Compression.dll
+C:\Users\b_hol\source\repos\DosBoxZip2CFG\DosBoxZip2CFG\bin\Debug\System.IO.Compression.ZipFile.dll
