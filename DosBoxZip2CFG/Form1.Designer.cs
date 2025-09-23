@@ -241,15 +241,16 @@ namespace DosBoxZip2CFG
             // filesList
             // 
             this.filesList.FormattingEnabled = true;
+            this.filesList.HorizontalScrollbar = true;
             this.filesList.Location = new System.Drawing.Point(230, 12);
             this.filesList.Name = "filesList";
             this.filesList.Size = new System.Drawing.Size(235, 485);
             this.filesList.TabIndex = 1;
-            this.filesList.SelectedIndexChanged += new System.EventHandler(this.listBox1_SelectedIndexChanged);
             // 
             // executableList
             // 
             this.executableList.FormattingEnabled = true;
+            this.executableList.HorizontalScrollbar = true;
             this.executableList.Location = new System.Drawing.Point(471, 28);
             this.executableList.Name = "executableList";
             this.executableList.Size = new System.Drawing.Size(235, 186);
@@ -277,6 +278,7 @@ namespace DosBoxZip2CFG
             // isoList
             // 
             this.isoList.FormattingEnabled = true;
+            this.isoList.HorizontalScrollbar = true;
             this.isoList.Location = new System.Drawing.Point(471, 233);
             this.isoList.Name = "isoList";
             this.isoList.Size = new System.Drawing.Size(235, 134);
@@ -332,7 +334,6 @@ namespace DosBoxZip2CFG
             this.label4.Size = new System.Drawing.Size(59, 13);
             this.label4.TabIndex = 11;
             this.label4.Text = "Target ISO";
-            this.label4.Click += new System.EventHandler(this.label4_Click);
             // 
             // configSettings
             // 
@@ -635,7 +636,6 @@ namespace DosBoxZip2CFG
             this.dosboxMemsize.TabIndex = 20;
             this.dosboxMemsize.TickFrequency = 8;
             this.dosboxMemsize.Value = 16;
-            this.dosboxMemsize.Scroll += new System.EventHandler(this.dosboxMemsize_Scroll);
             this.dosboxMemsize.ValueChanged += new System.EventHandler(this.dosboxMemsize_ValueChanged);
             // 
             // dosboxCapturesLabel
@@ -2180,9 +2180,9 @@ namespace DosBoxZip2CFG
             // 
             // save
             // 
-            this.save.Location = new System.Drawing.Point(12, 505);
+            this.save.Location = new System.Drawing.Point(12, 503);
             this.save.Name = "save";
-            this.save.Size = new System.Drawing.Size(102, 23);
+            this.save.Size = new System.Drawing.Size(81, 23);
             this.save.TabIndex = 14;
             this.save.Text = "Save Config";
             this.save.UseVisualStyleBackColor = true;
@@ -2190,11 +2190,11 @@ namespace DosBoxZip2CFG
             // 
             // insert
             // 
-            this.insert.Location = new System.Drawing.Point(120, 505);
+            this.insert.Location = new System.Drawing.Point(99, 503);
             this.insert.Name = "insert";
-            this.insert.Size = new System.Drawing.Size(102, 23);
+            this.insert.Size = new System.Drawing.Size(125, 23);
             this.insert.TabIndex = 15;
-            this.insert.Text = "Insert Into Zip";
+            this.insert.Text = "Insert Into Zip/Folder";
             this.insert.UseVisualStyleBackColor = true;
             this.insert.Click += new System.EventHandler(this.insert_Click);
             // 
