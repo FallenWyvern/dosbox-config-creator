@@ -45,47 +45,55 @@ namespace DosBoxZip2CFG
             this.label4 = new System.Windows.Forms.Label();
             this.configSettings = new System.Windows.Forms.TabControl();
             this.Core = new System.Windows.Forms.TabPage();
+            this.cpuCycleUpLabel = new System.Windows.Forms.Label();
+            this.cpuCycleDownLabel = new System.Windows.Forms.Label();
+            this.cpuCycleDown = new System.Windows.Forms.NumericUpDown();
+            this.cpuCycleUp = new System.Windows.Forms.NumericUpDown();
+            this.cpuCyclesLabel = new System.Windows.Forms.Label();
+            this.cpuCycles = new System.Windows.Forms.ComboBox();
+            this.cpuTypeLabel = new System.Windows.Forms.Label();
+            this.cpuCpuType = new System.Windows.Forms.ComboBox();
+            this.cpuCoreLabel = new System.Windows.Forms.Label();
+            this.cpuCore = new System.Windows.Forms.ComboBox();
+            this.keyboardLayoutLabel = new System.Windows.Forms.Label();
+            this.dosKeyLayout = new System.Windows.Forms.ComboBox();
+            this.dosUMBLabel = new System.Windows.Forms.Label();
+            this.dosEMSLabel = new System.Windows.Forms.Label();
+            this.dosXMSLabel = new System.Windows.Forms.Label();
+            this.dosUMB = new System.Windows.Forms.CheckBox();
+            this.dosEMS = new System.Windows.Forms.CheckBox();
+            this.dosXMS = new System.Windows.Forms.CheckBox();
+            this.memSizeScrollerText = new System.Windows.Forms.Label();
+            this.dosboxMemSizeLabel = new System.Windows.Forms.Label();
+            this.dosboxMemsize = new System.Windows.Forms.TrackBar();
+            this.dosboxCapturesLabel = new System.Windows.Forms.Label();
+            this.dosboxCaptures = new System.Windows.Forms.TextBox();
+            this.dosboxMachineLabel = new System.Windows.Forms.Label();
+            this.dosboxMachine = new System.Windows.Forms.ComboBox();
+            this.dosboxLanguageLabel = new System.Windows.Forms.Label();
+            this.dosboxLanguage = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.Video = new System.Windows.Forms.TabPage();
-            this.label10 = new System.Windows.Forms.Label();
-            this.label9 = new System.Windows.Forms.Label();
-            this.Audio = new System.Windows.Forms.TabPage();
-            this.label13 = new System.Windows.Forms.Label();
-            this.label11 = new System.Windows.Forms.Label();
-            this.tabPage1 = new System.Windows.Forms.TabPage();
-            this.label18 = new System.Windows.Forms.Label();
-            this.label17 = new System.Windows.Forms.Label();
-            this.label12 = new System.Windows.Forms.Label();
-            this.label19 = new System.Windows.Forms.Label();
-            this.dosboxLanguage = new System.Windows.Forms.TextBox();
-            this.dosboxLanguageLabel = new System.Windows.Forms.Label();
-            this.dosboxMachine = new System.Windows.Forms.ComboBox();
-            this.dosboxMachineLabel = new System.Windows.Forms.Label();
-            this.dosboxCapturesLabel = new System.Windows.Forms.Label();
-            this.dosboxCaptures = new System.Windows.Forms.TextBox();
-            this.dosboxMemsize = new System.Windows.Forms.TrackBar();
-            this.dosboxMemSizeLabel = new System.Windows.Forms.Label();
-            this.memSizeScrollerText = new System.Windows.Forms.Label();
-            this.dosXMS = new System.Windows.Forms.CheckBox();
-            this.dosEMS = new System.Windows.Forms.CheckBox();
-            this.dosUMB = new System.Windows.Forms.CheckBox();
-            this.dosXMSLabel = new System.Windows.Forms.Label();
-            this.dosEMSLabel = new System.Windows.Forms.Label();
-            this.dosUMBLabel = new System.Windows.Forms.Label();
-            this.dosKeyLayout = new System.Windows.Forms.ComboBox();
-            this.keyboardLayoutLabel = new System.Windows.Forms.Label();
-            this.cpuCoreLabel = new System.Windows.Forms.Label();
-            this.cpuCore = new System.Windows.Forms.ComboBox();
-            this.cpuTypeLabel = new System.Windows.Forms.Label();
-            this.cpuCpuType = new System.Windows.Forms.ComboBox();
-            this.cpuCyclesLabel = new System.Windows.Forms.Label();
-            this.cpuCycles = new System.Windows.Forms.ComboBox();
-            this.cpuCycleUp = new System.Windows.Forms.NumericUpDown();
-            this.cpuCycleDown = new System.Windows.Forms.NumericUpDown();
-            this.cpuCycleDownLabel = new System.Windows.Forms.Label();
-            this.cpuCycleUpLabel = new System.Windows.Forms.Label();
+            this.useScanCodesLabel = new System.Windows.Forms.Label();
+            this.sdlUseScanCodes = new System.Windows.Forms.CheckBox();
+            this.scalerLabel = new System.Windows.Forms.Label();
+            this.renderScaler = new System.Windows.Forms.ComboBox();
+            this.frameskipLabel = new System.Windows.Forms.Label();
+            this.renderFrameskip = new System.Windows.Forms.NumericUpDown();
+            this.sdlPriorityMinimized = new System.Windows.Forms.Label();
+            this.label20 = new System.Windows.Forms.Label();
+            this.sldPriorityMinimized = new System.Windows.Forms.ComboBox();
+            this.waitonerrorLabel = new System.Windows.Forms.Label();
+            this.sdlWaitOnError = new System.Windows.Forms.CheckBox();
+            this.sensitivityLabel = new System.Windows.Forms.Label();
+            this.sdlSensitivity = new System.Windows.Forms.NumericUpDown();
+            this.outputLabel = new System.Windows.Forms.Label();
+            this.windowResLabel = new System.Windows.Forms.Label();
+            this.sdlWindowRes = new System.Windows.Forms.TextBox();
+            this.label37 = new System.Windows.Forms.Label();
+            this.sdlFulldouble = new System.Windows.Forms.CheckBox();
             this.fullResolutionLabel = new System.Windows.Forms.Label();
             this.sdlOutput = new System.Windows.Forms.ComboBox();
             this.aspectLabel = new System.Windows.Forms.Label();
@@ -99,39 +107,11 @@ namespace DosBoxZip2CFG
             this.priorityLabel = new System.Windows.Forms.Label();
             this.sdlPriorityNotFocused = new System.Windows.Forms.ComboBox();
             this.sdlFullResolution = new System.Windows.Forms.TextBox();
-            this.label37 = new System.Windows.Forms.Label();
-            this.sdlFulldouble = new System.Windows.Forms.CheckBox();
-            this.windowResLabel = new System.Windows.Forms.Label();
-            this.sdlWindowRes = new System.Windows.Forms.TextBox();
-            this.outputLabel = new System.Windows.Forms.Label();
-            this.sensitivityLabel = new System.Windows.Forms.Label();
-            this.sdlSensitivity = new System.Windows.Forms.NumericUpDown();
-            this.waitonerrorLabel = new System.Windows.Forms.Label();
-            this.sdlWaitOnError = new System.Windows.Forms.CheckBox();
-            this.sldPriorityMinimized = new System.Windows.Forms.ComboBox();
-            this.label20 = new System.Windows.Forms.Label();
-            this.sdlPriorityMinimized = new System.Windows.Forms.Label();
-            this.frameskipLabel = new System.Windows.Forms.Label();
-            this.renderFrameskip = new System.Windows.Forms.NumericUpDown();
-            this.scalerLabel = new System.Windows.Forms.Label();
-            this.renderScaler = new System.Windows.Forms.ComboBox();
-            this.nosoundLabel = new System.Windows.Forms.Label();
-            this.mixerNoSound = new System.Windows.Forms.CheckBox();
-            this.rateLabel = new System.Windows.Forms.Label();
-            this.mixerRate = new System.Windows.Forms.ComboBox();
-            this.blocksizeLabel = new System.Windows.Forms.Label();
-            this.mixerBlockSize = new System.Windows.Forms.ComboBox();
-            this.prebufferLabel = new System.Windows.Forms.Label();
-            this.mixerPreBuffer = new System.Windows.Forms.NumericUpDown();
-            this.midiDeviceLabel = new System.Windows.Forms.Label();
-            this.midiDevice = new System.Windows.Forms.ComboBox();
-            this.midiMPULabel = new System.Windows.Forms.Label();
-            this.midiMPU = new System.Windows.Forms.ComboBox();
-            this.midiConfigLabel = new System.Windows.Forms.Label();
-            this.midiConfig = new System.Windows.Forms.TextBox();
+            this.label10 = new System.Windows.Forms.Label();
+            this.label9 = new System.Windows.Forms.Label();
+            this.Audio = new System.Windows.Forms.TabPage();
             this.tabControl2 = new System.Windows.Forms.TabControl();
             this.SBlaster = new System.Windows.Forms.TabPage();
-            this.GUS = new System.Windows.Forms.TabPage();
             this.OPLRateLabel = new System.Windows.Forms.Label();
             this.sblasterOPLRate = new System.Windows.Forms.ComboBox();
             this.OPLEmuLabel = new System.Windows.Forms.Label();
@@ -150,6 +130,7 @@ namespace DosBoxZip2CFG
             this.sblasterSBBase = new System.Windows.Forms.ComboBox();
             this.sbTypeLabel = new System.Windows.Forms.Label();
             this.sblasterSBType = new System.Windows.Forms.ComboBox();
+            this.GUS = new System.Windows.Forms.TabPage();
             this.UltraDIRLabel = new System.Windows.Forms.Label();
             this.gusUltraDir = new System.Windows.Forms.TextBox();
             this.GusDMALabel = new System.Windows.Forms.Label();
@@ -163,6 +144,8 @@ namespace DosBoxZip2CFG
             this.gusEnableGusLabel = new System.Windows.Forms.Label();
             this.gusEnableGus = new System.Windows.Forms.CheckBox();
             this.Speaker = new System.Windows.Forms.TabPage();
+            this.pcTandyLabel = new System.Windows.Forms.Label();
+            this.speakerTandy = new System.Windows.Forms.TextBox();
             this.tandyRateLabel = new System.Windows.Forms.Label();
             this.speakerTandyRate = new System.Windows.Forms.ComboBox();
             this.speakerRateLabel = new System.Windows.Forms.Label();
@@ -171,49 +154,66 @@ namespace DosBoxZip2CFG
             this.speakerDisney = new System.Windows.Forms.CheckBox();
             this.pcSpeakerLabel = new System.Windows.Forms.Label();
             this.speakerEnable = new System.Windows.Forms.CheckBox();
-            this.pcTandyLabel = new System.Windows.Forms.Label();
-            this.speakerTandy = new System.Windows.Forms.TextBox();
+            this.midiConfigLabel = new System.Windows.Forms.Label();
+            this.midiConfig = new System.Windows.Forms.TextBox();
+            this.midiDeviceLabel = new System.Windows.Forms.Label();
+            this.midiDevice = new System.Windows.Forms.ComboBox();
+            this.midiMPULabel = new System.Windows.Forms.Label();
+            this.midiMPU = new System.Windows.Forms.ComboBox();
+            this.prebufferLabel = new System.Windows.Forms.Label();
+            this.mixerPreBuffer = new System.Windows.Forms.NumericUpDown();
+            this.blocksizeLabel = new System.Windows.Forms.Label();
+            this.mixerBlockSize = new System.Windows.Forms.ComboBox();
+            this.rateLabel = new System.Windows.Forms.Label();
+            this.mixerRate = new System.Windows.Forms.ComboBox();
+            this.nosoundLabel = new System.Windows.Forms.Label();
+            this.mixerNoSound = new System.Windows.Forms.CheckBox();
+            this.label13 = new System.Windows.Forms.Label();
+            this.label11 = new System.Windows.Forms.Label();
+            this.tabPage1 = new System.Windows.Forms.TabPage();
+            this.ipxLabel = new System.Windows.Forms.Label();
+            this.ipxEnable = new System.Windows.Forms.CheckBox();
+            this.serial4Label = new System.Windows.Forms.Label();
+            this.serial4 = new System.Windows.Forms.ComboBox();
+            this.serial3Label = new System.Windows.Forms.Label();
+            this.serial3 = new System.Windows.Forms.ComboBox();
+            this.serial2Label = new System.Windows.Forms.Label();
+            this.serial2 = new System.Windows.Forms.ComboBox();
+            this.serial1Label = new System.Windows.Forms.Label();
+            this.serial1 = new System.Windows.Forms.ComboBox();
+            this.joystickButtonWrapLabel = new System.Windows.Forms.Label();
+            this.joystickButtonWrap = new System.Windows.Forms.CheckBox();
+            this.joystickSwapLabel = new System.Windows.Forms.Label();
+            this.joystickSwap = new System.Windows.Forms.CheckBox();
+            this.joystickAutoFireLabel = new System.Windows.Forms.Label();
+            this.joystickAutoFire = new System.Windows.Forms.CheckBox();
             this.joystickTypeLabel = new System.Windows.Forms.Label();
             this.joystickType = new System.Windows.Forms.ComboBox();
             this.joystickTimedLabel = new System.Windows.Forms.Label();
             this.joystickTimed = new System.Windows.Forms.CheckBox();
-            this.joystickAutoFireLabel = new System.Windows.Forms.Label();
-            this.joystickAutoFire = new System.Windows.Forms.CheckBox();
-            this.joystickSwapLabel = new System.Windows.Forms.Label();
-            this.joystickSwap = new System.Windows.Forms.CheckBox();
-            this.joystickButtonWrapLabel = new System.Windows.Forms.Label();
-            this.joystickButtonWrap = new System.Windows.Forms.CheckBox();
-            this.serial1Label = new System.Windows.Forms.Label();
-            this.serial1 = new System.Windows.Forms.ComboBox();
-            this.serial2Label = new System.Windows.Forms.Label();
-            this.serial2 = new System.Windows.Forms.ComboBox();
-            this.serial3Label = new System.Windows.Forms.Label();
-            this.serial3 = new System.Windows.Forms.ComboBox();
-            this.serial4Label = new System.Windows.Forms.Label();
-            this.serial4 = new System.Windows.Forms.ComboBox();
-            this.ipxLabel = new System.Windows.Forms.Label();
-            this.ipxEnable = new System.Windows.Forms.CheckBox();
-            this.useScanCodesLabel = new System.Windows.Forms.Label();
-            this.sdlUseScanCodes = new System.Windows.Forms.CheckBox();
+            this.label18 = new System.Windows.Forms.Label();
+            this.label17 = new System.Windows.Forms.Label();
+            this.label12 = new System.Windows.Forms.Label();
+            this.label19 = new System.Windows.Forms.Label();
             this.dcctToolTip = new System.Windows.Forms.ToolTip(this.components);
             this.save = new System.Windows.Forms.Button();
             this.insert = new System.Windows.Forms.Button();
             this.zipDropZone.SuspendLayout();
             this.configSettings.SuspendLayout();
             this.Core.SuspendLayout();
-            this.Video.SuspendLayout();
-            this.Audio.SuspendLayout();
-            this.tabPage1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dosboxMemsize)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.cpuCycleUp)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.cpuCycleDown)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.sdlSensitivity)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.cpuCycleUp)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dosboxMemsize)).BeginInit();
+            this.Video.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.renderFrameskip)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.mixerPreBuffer)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.sdlSensitivity)).BeginInit();
+            this.Audio.SuspendLayout();
             this.tabControl2.SuspendLayout();
             this.SBlaster.SuspendLayout();
             this.GUS.SuspendLayout();
             this.Speaker.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.mixerPreBuffer)).BeginInit();
+            this.tabPage1.SuspendLayout();
             this.SuspendLayout();
             // 
             // zipDropZone
@@ -386,6 +386,322 @@ namespace DosBoxZip2CFG
             this.Core.Text = "Core";
             this.Core.UseVisualStyleBackColor = true;
             // 
+            // cpuCycleUpLabel
+            // 
+            this.cpuCycleUpLabel.AutoSize = true;
+            this.cpuCycleUpLabel.Location = new System.Drawing.Point(43, 379);
+            this.cpuCycleUpLabel.Name = "cpuCycleUpLabel";
+            this.cpuCycleUpLabel.Size = new System.Drawing.Size(50, 13);
+            this.cpuCycleUpLabel.TabIndex = 40;
+            this.cpuCycleUpLabel.Text = "Cycle Up";
+            // 
+            // cpuCycleDownLabel
+            // 
+            this.cpuCycleDownLabel.AutoSize = true;
+            this.cpuCycleDownLabel.Location = new System.Drawing.Point(29, 405);
+            this.cpuCycleDownLabel.Name = "cpuCycleDownLabel";
+            this.cpuCycleDownLabel.Size = new System.Drawing.Size(64, 13);
+            this.cpuCycleDownLabel.TabIndex = 39;
+            this.cpuCycleDownLabel.Text = "Cycle Down";
+            // 
+            // cpuCycleDown
+            // 
+            this.cpuCycleDown.Location = new System.Drawing.Point(100, 403);
+            this.cpuCycleDown.Name = "cpuCycleDown";
+            this.cpuCycleDown.Size = new System.Drawing.Size(256, 20);
+            this.cpuCycleDown.TabIndex = 38;
+            this.cpuCycleDown.Value = new decimal(new int[] {
+            20,
+            0,
+            0,
+            0});
+            // 
+            // cpuCycleUp
+            // 
+            this.cpuCycleUp.Location = new System.Drawing.Point(100, 377);
+            this.cpuCycleUp.Name = "cpuCycleUp";
+            this.cpuCycleUp.Size = new System.Drawing.Size(256, 20);
+            this.cpuCycleUp.TabIndex = 37;
+            this.cpuCycleUp.Value = new decimal(new int[] {
+            10,
+            0,
+            0,
+            0});
+            // 
+            // cpuCyclesLabel
+            // 
+            this.cpuCyclesLabel.AutoSize = true;
+            this.cpuCyclesLabel.Location = new System.Drawing.Point(33, 353);
+            this.cpuCyclesLabel.Name = "cpuCyclesLabel";
+            this.cpuCyclesLabel.Size = new System.Drawing.Size(63, 13);
+            this.cpuCyclesLabel.TabIndex = 36;
+            this.cpuCyclesLabel.Text = "CPU Cycles";
+            // 
+            // cpuCycles
+            // 
+            this.cpuCycles.FormattingEnabled = true;
+            this.cpuCycles.Items.AddRange(new object[] {
+            "auto",
+            "max"});
+            this.cpuCycles.Location = new System.Drawing.Point(100, 350);
+            this.cpuCycles.Name = "cpuCycles";
+            this.cpuCycles.Size = new System.Drawing.Size(256, 21);
+            this.cpuCycles.TabIndex = 35;
+            this.cpuCycles.Text = "auto";
+            // 
+            // cpuTypeLabel
+            // 
+            this.cpuTypeLabel.AutoSize = true;
+            this.cpuTypeLabel.Location = new System.Drawing.Point(37, 326);
+            this.cpuTypeLabel.Name = "cpuTypeLabel";
+            this.cpuTypeLabel.Size = new System.Drawing.Size(56, 13);
+            this.cpuTypeLabel.TabIndex = 34;
+            this.cpuTypeLabel.Text = "CPU Type";
+            // 
+            // cpuCpuType
+            // 
+            this.cpuCpuType.FormattingEnabled = true;
+            this.cpuCpuType.Items.AddRange(new object[] {
+            "auto",
+            "386",
+            "386_slow",
+            "486_slow",
+            "pentium_slow",
+            "386_prefetch"});
+            this.cpuCpuType.Location = new System.Drawing.Point(101, 323);
+            this.cpuCpuType.Name = "cpuCpuType";
+            this.cpuCpuType.Size = new System.Drawing.Size(256, 21);
+            this.cpuCpuType.TabIndex = 33;
+            this.cpuCpuType.Text = "auto";
+            // 
+            // cpuCoreLabel
+            // 
+            this.cpuCoreLabel.AutoSize = true;
+            this.cpuCoreLabel.Location = new System.Drawing.Point(39, 299);
+            this.cpuCoreLabel.Name = "cpuCoreLabel";
+            this.cpuCoreLabel.Size = new System.Drawing.Size(54, 13);
+            this.cpuCoreLabel.TabIndex = 32;
+            this.cpuCoreLabel.Text = "CPU Core";
+            // 
+            // cpuCore
+            // 
+            this.cpuCore.FormattingEnabled = true;
+            this.cpuCore.Items.AddRange(new object[] {
+            "auto",
+            "dynamic",
+            "normal",
+            "simple"});
+            this.cpuCore.Location = new System.Drawing.Point(100, 296);
+            this.cpuCore.Name = "cpuCore";
+            this.cpuCore.Size = new System.Drawing.Size(256, 21);
+            this.cpuCore.TabIndex = 31;
+            this.cpuCore.Text = "dynamic";
+            // 
+            // keyboardLayoutLabel
+            // 
+            this.keyboardLayoutLabel.AutoSize = true;
+            this.keyboardLayoutLabel.Location = new System.Drawing.Point(7, 239);
+            this.keyboardLayoutLabel.Name = "keyboardLayoutLabel";
+            this.keyboardLayoutLabel.Size = new System.Drawing.Size(87, 13);
+            this.keyboardLayoutLabel.TabIndex = 30;
+            this.keyboardLayoutLabel.Text = "Keyboard Layout";
+            // 
+            // dosKeyLayout
+            // 
+            this.dosKeyLayout.FormattingEnabled = true;
+            this.dosKeyLayout.Items.AddRange(new object[] {
+            "auto",
+            "be - Belgium",
+            "br - Brazil",
+            "cf - Canadian French",
+            "cz - Czechoslovakia (Czech)",
+            "sl - Czechoslovakia (Slovak)",
+            "dk - Denmark",
+            "su - Finland",
+            "fr - France",
+            "gr - Germany",
+            "hu - Hungary",
+            "it - Italy",
+            "la - Latin America",
+            "nl - Netherlands",
+            "no - Norway",
+            "pl - Poland",
+            "po - Portugal",
+            "ru - Russian",
+            "sp - Spain",
+            "sw - Sweden",
+            "sf - Swizerland (French)",
+            "sg - Swizerland (German)",
+            "uk - United Kingdom",
+            "us - United States",
+            "dv103 - United States (Dvorak)",
+            "yu - Yugoslavia (Serbio-Croatian)"});
+            this.dosKeyLayout.Location = new System.Drawing.Point(100, 236);
+            this.dosKeyLayout.Name = "dosKeyLayout";
+            this.dosKeyLayout.Size = new System.Drawing.Size(256, 21);
+            this.dosKeyLayout.TabIndex = 29;
+            this.dosKeyLayout.Text = "auto";
+            // 
+            // dosUMBLabel
+            // 
+            this.dosUMBLabel.AutoSize = true;
+            this.dosUMBLabel.Location = new System.Drawing.Point(27, 214);
+            this.dosUMBLabel.Name = "dosUMBLabel";
+            this.dosUMBLabel.Size = new System.Drawing.Size(67, 13);
+            this.dosUMBLabel.TabIndex = 28;
+            this.dosUMBLabel.Text = "Enable UMB";
+            // 
+            // dosEMSLabel
+            // 
+            this.dosEMSLabel.AutoSize = true;
+            this.dosEMSLabel.Location = new System.Drawing.Point(27, 191);
+            this.dosEMSLabel.Name = "dosEMSLabel";
+            this.dosEMSLabel.Size = new System.Drawing.Size(66, 13);
+            this.dosEMSLabel.TabIndex = 27;
+            this.dosEMSLabel.Text = "Enable EMS";
+            // 
+            // dosXMSLabel
+            // 
+            this.dosXMSLabel.AutoSize = true;
+            this.dosXMSLabel.Location = new System.Drawing.Point(28, 168);
+            this.dosXMSLabel.Name = "dosXMSLabel";
+            this.dosXMSLabel.Size = new System.Drawing.Size(66, 13);
+            this.dosXMSLabel.TabIndex = 26;
+            this.dosXMSLabel.Text = "Enable XMS";
+            // 
+            // dosUMB
+            // 
+            this.dosUMB.AutoSize = true;
+            this.dosUMB.Checked = true;
+            this.dosUMB.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.dosUMB.Location = new System.Drawing.Point(100, 213);
+            this.dosUMB.Name = "dosUMB";
+            this.dosUMB.Size = new System.Drawing.Size(50, 17);
+            this.dosUMB.TabIndex = 25;
+            this.dosUMB.Text = "UMB";
+            this.dosUMB.UseVisualStyleBackColor = true;
+            // 
+            // dosEMS
+            // 
+            this.dosEMS.AutoSize = true;
+            this.dosEMS.Checked = true;
+            this.dosEMS.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.dosEMS.Location = new System.Drawing.Point(100, 190);
+            this.dosEMS.Name = "dosEMS";
+            this.dosEMS.Size = new System.Drawing.Size(49, 17);
+            this.dosEMS.TabIndex = 24;
+            this.dosEMS.Text = "EMS";
+            this.dosEMS.UseVisualStyleBackColor = true;
+            // 
+            // dosXMS
+            // 
+            this.dosXMS.AutoSize = true;
+            this.dosXMS.Checked = true;
+            this.dosXMS.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.dosXMS.Location = new System.Drawing.Point(100, 167);
+            this.dosXMS.Name = "dosXMS";
+            this.dosXMS.Size = new System.Drawing.Size(49, 17);
+            this.dosXMS.TabIndex = 23;
+            this.dosXMS.Text = "XMS";
+            this.dosXMS.UseVisualStyleBackColor = true;
+            // 
+            // memSizeScrollerText
+            // 
+            this.memSizeScrollerText.AutoSize = true;
+            this.memSizeScrollerText.Location = new System.Drawing.Point(292, 112);
+            this.memSizeScrollerText.Name = "memSizeScrollerText";
+            this.memSizeScrollerText.Size = new System.Drawing.Size(38, 13);
+            this.memSizeScrollerText.TabIndex = 22;
+            this.memSizeScrollerText.Text = "16 MB";
+            // 
+            // dosboxMemSizeLabel
+            // 
+            this.dosboxMemSizeLabel.AutoSize = true;
+            this.dosboxMemSizeLabel.Location = new System.Drawing.Point(46, 112);
+            this.dosboxMemSizeLabel.Name = "dosboxMemSizeLabel";
+            this.dosboxMemSizeLabel.Size = new System.Drawing.Size(53, 13);
+            this.dosboxMemSizeLabel.TabIndex = 21;
+            this.dosboxMemSizeLabel.Text = "Mem Size";
+            // 
+            // dosboxMemsize
+            // 
+            this.dosboxMemsize.LargeChange = 8;
+            this.dosboxMemsize.Location = new System.Drawing.Point(101, 104);
+            this.dosboxMemsize.Maximum = 32;
+            this.dosboxMemsize.Minimum = 8;
+            this.dosboxMemsize.Name = "dosboxMemsize";
+            this.dosboxMemsize.Size = new System.Drawing.Size(171, 45);
+            this.dosboxMemsize.SmallChange = 8;
+            this.dosboxMemsize.TabIndex = 20;
+            this.dosboxMemsize.TickFrequency = 8;
+            this.dosboxMemsize.Value = 16;
+            this.dosboxMemsize.Scroll += new System.EventHandler(this.dosboxMemsize_Scroll);
+            this.dosboxMemsize.ValueChanged += new System.EventHandler(this.dosboxMemsize_ValueChanged);
+            // 
+            // dosboxCapturesLabel
+            // 
+            this.dosboxCapturesLabel.AutoSize = true;
+            this.dosboxCapturesLabel.Location = new System.Drawing.Point(45, 79);
+            this.dosboxCapturesLabel.Name = "dosboxCapturesLabel";
+            this.dosboxCapturesLabel.Size = new System.Drawing.Size(49, 13);
+            this.dosboxCapturesLabel.TabIndex = 19;
+            this.dosboxCapturesLabel.Text = "Captures";
+            // 
+            // dosboxCaptures
+            // 
+            this.dosboxCaptures.Location = new System.Drawing.Point(100, 76);
+            this.dosboxCaptures.Name = "dosboxCaptures";
+            this.dosboxCaptures.Size = new System.Drawing.Size(256, 20);
+            this.dosboxCaptures.TabIndex = 18;
+            this.dosboxCaptures.Text = ".\\Captures\\";
+            // 
+            // dosboxMachineLabel
+            // 
+            this.dosboxMachineLabel.AutoSize = true;
+            this.dosboxMachineLabel.Location = new System.Drawing.Point(46, 52);
+            this.dosboxMachineLabel.Name = "dosboxMachineLabel";
+            this.dosboxMachineLabel.Size = new System.Drawing.Size(48, 13);
+            this.dosboxMachineLabel.TabIndex = 17;
+            this.dosboxMachineLabel.Text = "Machine";
+            // 
+            // dosboxMachine
+            // 
+            this.dosboxMachine.FormattingEnabled = true;
+            this.dosboxMachine.Items.AddRange(new object[] {
+            "svga_s3",
+            "hercules",
+            "cga",
+            "tandy",
+            "pcjr",
+            "ega",
+            "vgaonly",
+            "svga_et3000",
+            "svga_et4000",
+            "svga_paradise",
+            "vesa_nolfb",
+            "vesa_oldvbe"});
+            this.dosboxMachine.Location = new System.Drawing.Point(100, 49);
+            this.dosboxMachine.Name = "dosboxMachine";
+            this.dosboxMachine.Size = new System.Drawing.Size(256, 21);
+            this.dosboxMachine.TabIndex = 16;
+            this.dosboxMachine.Text = "svga_s3";
+            // 
+            // dosboxLanguageLabel
+            // 
+            this.dosboxLanguageLabel.AutoSize = true;
+            this.dosboxLanguageLabel.Location = new System.Drawing.Point(39, 26);
+            this.dosboxLanguageLabel.Name = "dosboxLanguageLabel";
+            this.dosboxLanguageLabel.Size = new System.Drawing.Size(55, 13);
+            this.dosboxLanguageLabel.TabIndex = 15;
+            this.dosboxLanguageLabel.Text = "Language";
+            // 
+            // dosboxLanguage
+            // 
+            this.dosboxLanguage.Location = new System.Drawing.Point(100, 23);
+            this.dosboxLanguage.Name = "dosboxLanguage";
+            this.dosboxLanguage.Size = new System.Drawing.Size(256, 20);
+            this.dosboxLanguage.TabIndex = 14;
+            // 
             // label6
             // 
             this.label6.AutoSize = true;
@@ -456,451 +772,215 @@ namespace DosBoxZip2CFG
             this.Video.Text = "Video";
             this.Video.UseVisualStyleBackColor = true;
             // 
-            // label10
+            // useScanCodesLabel
             // 
-            this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(6, 323);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(42, 13);
-            this.label10.TabIndex = 1;
-            this.label10.Text = "Render";
+            this.useScanCodesLabel.AutoSize = true;
+            this.useScanCodesLabel.Location = new System.Drawing.Point(3, 289);
+            this.useScanCodesLabel.Name = "useScanCodesLabel";
+            this.useScanCodesLabel.Size = new System.Drawing.Size(87, 13);
+            this.useScanCodesLabel.TabIndex = 64;
+            this.useScanCodesLabel.Text = "Use Scan Codes";
             // 
-            // label9
+            // sdlUseScanCodes
             // 
-            this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(6, 3);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(28, 13);
-            this.label9.TabIndex = 0;
-            this.label9.Text = "SDL";
+            this.sdlUseScanCodes.AutoSize = true;
+            this.sdlUseScanCodes.Location = new System.Drawing.Point(99, 288);
+            this.sdlUseScanCodes.Name = "sdlUseScanCodes";
+            this.sdlUseScanCodes.Size = new System.Drawing.Size(106, 17);
+            this.sdlUseScanCodes.TabIndex = 63;
+            this.sdlUseScanCodes.Text = "Use Scan Codes";
+            this.sdlUseScanCodes.UseVisualStyleBackColor = true;
             // 
-            // Audio
+            // scalerLabel
             // 
-            this.Audio.Controls.Add(this.tabControl2);
-            this.Audio.Controls.Add(this.midiConfigLabel);
-            this.Audio.Controls.Add(this.midiConfig);
-            this.Audio.Controls.Add(this.midiDeviceLabel);
-            this.Audio.Controls.Add(this.midiDevice);
-            this.Audio.Controls.Add(this.midiMPULabel);
-            this.Audio.Controls.Add(this.midiMPU);
-            this.Audio.Controls.Add(this.prebufferLabel);
-            this.Audio.Controls.Add(this.mixerPreBuffer);
-            this.Audio.Controls.Add(this.blocksizeLabel);
-            this.Audio.Controls.Add(this.mixerBlockSize);
-            this.Audio.Controls.Add(this.rateLabel);
-            this.Audio.Controls.Add(this.mixerRate);
-            this.Audio.Controls.Add(this.nosoundLabel);
-            this.Audio.Controls.Add(this.mixerNoSound);
-            this.Audio.Controls.Add(this.label13);
-            this.Audio.Controls.Add(this.label11);
-            this.Audio.Location = new System.Drawing.Point(4, 22);
-            this.Audio.Name = "Audio";
-            this.Audio.Size = new System.Drawing.Size(365, 443);
-            this.Audio.TabIndex = 2;
-            this.Audio.Text = "Audio";
-            this.Audio.UseVisualStyleBackColor = true;
+            this.scalerLabel.AutoSize = true;
+            this.scalerLabel.Location = new System.Drawing.Point(51, 395);
+            this.scalerLabel.Name = "scalerLabel";
+            this.scalerLabel.Size = new System.Drawing.Size(37, 13);
+            this.scalerLabel.TabIndex = 62;
+            this.scalerLabel.Text = "Scaler";
             // 
-            // label13
+            // renderScaler
             // 
-            this.label13.AutoSize = true;
-            this.label13.Location = new System.Drawing.Point(3, 131);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(26, 13);
-            this.label13.TabIndex = 2;
-            this.label13.Text = "Midi";
+            this.renderScaler.FormattingEnabled = true;
+            this.renderScaler.Items.AddRange(new object[] {
+            "none",
+            "normal2x",
+            "normal3x",
+            "advmame2x",
+            "advmame3x",
+            "advinterp2x",
+            "advinterp3x",
+            "hq2x",
+            "hq3x",
+            "2xsai",
+            "super2xsai",
+            "supereagle",
+            "tv2x",
+            "tv3x",
+            "rgb2x",
+            "rgb3x",
+            "scan2x",
+            "scan3x"});
+            this.renderScaler.Location = new System.Drawing.Point(99, 392);
+            this.renderScaler.Name = "renderScaler";
+            this.renderScaler.Size = new System.Drawing.Size(256, 21);
+            this.renderScaler.TabIndex = 61;
+            this.renderScaler.Text = "normal3x";
             // 
-            // label11
+            // frameskipLabel
             // 
-            this.label11.AutoSize = true;
-            this.label11.Location = new System.Drawing.Point(3, 9);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(32, 13);
-            this.label11.TabIndex = 0;
-            this.label11.Text = "Mixer";
+            this.frameskipLabel.AutoSize = true;
+            this.frameskipLabel.Location = new System.Drawing.Point(33, 345);
+            this.frameskipLabel.Name = "frameskipLabel";
+            this.frameskipLabel.Size = new System.Drawing.Size(55, 13);
+            this.frameskipLabel.TabIndex = 60;
+            this.frameskipLabel.Text = "Frameskip";
             // 
-            // tabPage1
+            // renderFrameskip
             // 
-            this.tabPage1.Controls.Add(this.ipxLabel);
-            this.tabPage1.Controls.Add(this.ipxEnable);
-            this.tabPage1.Controls.Add(this.serial4Label);
-            this.tabPage1.Controls.Add(this.serial4);
-            this.tabPage1.Controls.Add(this.serial3Label);
-            this.tabPage1.Controls.Add(this.serial3);
-            this.tabPage1.Controls.Add(this.serial2Label);
-            this.tabPage1.Controls.Add(this.serial2);
-            this.tabPage1.Controls.Add(this.serial1Label);
-            this.tabPage1.Controls.Add(this.serial1);
-            this.tabPage1.Controls.Add(this.joystickButtonWrapLabel);
-            this.tabPage1.Controls.Add(this.joystickButtonWrap);
-            this.tabPage1.Controls.Add(this.joystickSwapLabel);
-            this.tabPage1.Controls.Add(this.joystickSwap);
-            this.tabPage1.Controls.Add(this.joystickAutoFireLabel);
-            this.tabPage1.Controls.Add(this.joystickAutoFire);
-            this.tabPage1.Controls.Add(this.joystickTypeLabel);
-            this.tabPage1.Controls.Add(this.joystickType);
-            this.tabPage1.Controls.Add(this.joystickTimedLabel);
-            this.tabPage1.Controls.Add(this.joystickTimed);
-            this.tabPage1.Controls.Add(this.label18);
-            this.tabPage1.Controls.Add(this.label17);
-            this.tabPage1.Controls.Add(this.label12);
-            this.tabPage1.Location = new System.Drawing.Point(4, 22);
-            this.tabPage1.Name = "tabPage1";
-            this.tabPage1.Size = new System.Drawing.Size(365, 443);
-            this.tabPage1.TabIndex = 3;
-            this.tabPage1.Text = "Devices";
-            this.tabPage1.UseVisualStyleBackColor = true;
+            this.renderFrameskip.Location = new System.Drawing.Point(99, 343);
+            this.renderFrameskip.Maximum = new decimal(new int[] {
+            1000,
+            0,
+            0,
+            0});
+            this.renderFrameskip.Name = "renderFrameskip";
+            this.renderFrameskip.Size = new System.Drawing.Size(256, 20);
+            this.renderFrameskip.TabIndex = 59;
             // 
-            // label18
+            // sdlPriorityMinimized
             // 
-            this.label18.AutoSize = true;
-            this.label18.Location = new System.Drawing.Point(13, 304);
-            this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(24, 13);
-            this.label18.TabIndex = 2;
-            this.label18.Text = "IPX";
+            this.sdlPriorityMinimized.AutoSize = true;
+            this.sdlPriorityMinimized.Location = new System.Drawing.Point(272, 219);
+            this.sdlPriorityMinimized.Name = "sdlPriorityMinimized";
+            this.sdlPriorityMinimized.Size = new System.Drawing.Size(53, 13);
+            this.sdlPriorityMinimized.TabIndex = 58;
+            this.sdlPriorityMinimized.Text = "Minimized";
             // 
-            // label17
+            // label20
             // 
-            this.label17.AutoSize = true;
-            this.label17.Location = new System.Drawing.Point(13, 167);
-            this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(33, 13);
-            this.label17.TabIndex = 1;
-            this.label17.Text = "Serial";
+            this.label20.AutoSize = true;
+            this.label20.Location = new System.Drawing.Point(128, 219);
+            this.label20.Name = "label20";
+            this.label20.Size = new System.Drawing.Size(68, 13);
+            this.label20.TabIndex = 57;
+            this.label20.Text = "Not Focused";
             // 
-            // label12
+            // sldPriorityMinimized
             // 
-            this.label12.AutoSize = true;
-            this.label12.Location = new System.Drawing.Point(13, 11);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(45, 13);
-            this.label12.TabIndex = 0;
-            this.label12.Text = "Joystick";
-            // 
-            // label19
-            // 
-            this.label19.AutoSize = true;
-            this.label19.Location = new System.Drawing.Point(831, 12);
-            this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(126, 13);
-            this.label19.TabIndex = 13;
-            this.label19.Text = "DOSBOX Config Settings";
-            // 
-            // dosboxLanguage
-            // 
-            this.dosboxLanguage.Location = new System.Drawing.Point(100, 23);
-            this.dosboxLanguage.Name = "dosboxLanguage";
-            this.dosboxLanguage.Size = new System.Drawing.Size(256, 20);
-            this.dosboxLanguage.TabIndex = 14;
-            // 
-            // dosboxLanguageLabel
-            // 
-            this.dosboxLanguageLabel.AutoSize = true;
-            this.dosboxLanguageLabel.Location = new System.Drawing.Point(39, 26);
-            this.dosboxLanguageLabel.Name = "dosboxLanguageLabel";
-            this.dosboxLanguageLabel.Size = new System.Drawing.Size(55, 13);
-            this.dosboxLanguageLabel.TabIndex = 15;
-            this.dosboxLanguageLabel.Text = "Language";
-            // 
-            // dosboxMachine
-            // 
-            this.dosboxMachine.FormattingEnabled = true;
-            this.dosboxMachine.Items.AddRange(new object[] {
-            "svga_s3",
-            "hercules",
-            "cga",
-            "tandy",
-            "pcjr",
-            "ega",
-            "vgaonly",
-            "svga_et3000",
-            "svga_et4000",
-            "svga_paradise",
-            "vesa_nolfb",
-            "vesa_oldvbe"});
-            this.dosboxMachine.Location = new System.Drawing.Point(100, 49);
-            this.dosboxMachine.Name = "dosboxMachine";
-            this.dosboxMachine.Size = new System.Drawing.Size(256, 21);
-            this.dosboxMachine.TabIndex = 16;
-            this.dosboxMachine.Text = "svga_s3";
-            // 
-            // dosboxMachineLabel
-            // 
-            this.dosboxMachineLabel.AutoSize = true;
-            this.dosboxMachineLabel.Location = new System.Drawing.Point(46, 52);
-            this.dosboxMachineLabel.Name = "dosboxMachineLabel";
-            this.dosboxMachineLabel.Size = new System.Drawing.Size(48, 13);
-            this.dosboxMachineLabel.TabIndex = 17;
-            this.dosboxMachineLabel.Text = "Machine";
-            // 
-            // dosboxCapturesLabel
-            // 
-            this.dosboxCapturesLabel.AutoSize = true;
-            this.dosboxCapturesLabel.Location = new System.Drawing.Point(45, 79);
-            this.dosboxCapturesLabel.Name = "dosboxCapturesLabel";
-            this.dosboxCapturesLabel.Size = new System.Drawing.Size(49, 13);
-            this.dosboxCapturesLabel.TabIndex = 19;
-            this.dosboxCapturesLabel.Text = "Captures";
-            // 
-            // dosboxCaptures
-            // 
-            this.dosboxCaptures.Location = new System.Drawing.Point(100, 76);
-            this.dosboxCaptures.Name = "dosboxCaptures";
-            this.dosboxCaptures.Size = new System.Drawing.Size(256, 20);
-            this.dosboxCaptures.TabIndex = 18;
-            this.dosboxCaptures.Text = ".\\Captures\\";
-            // 
-            // dosboxMemsize
-            // 
-            this.dosboxMemsize.LargeChange = 8;
-            this.dosboxMemsize.Location = new System.Drawing.Point(101, 104);
-            this.dosboxMemsize.Maximum = 32;
-            this.dosboxMemsize.Minimum = 8;
-            this.dosboxMemsize.Name = "dosboxMemsize";
-            this.dosboxMemsize.Size = new System.Drawing.Size(171, 45);
-            this.dosboxMemsize.SmallChange = 8;
-            this.dosboxMemsize.TabIndex = 20;
-            this.dosboxMemsize.TickFrequency = 8;
-            this.dosboxMemsize.Value = 16;
-            this.dosboxMemsize.Scroll += new System.EventHandler(this.dosboxMemsize_Scroll);
-            this.dosboxMemsize.ValueChanged += new System.EventHandler(this.dosboxMemsize_ValueChanged);
-            // 
-            // dosboxMemSizeLabel
-            // 
-            this.dosboxMemSizeLabel.AutoSize = true;
-            this.dosboxMemSizeLabel.Location = new System.Drawing.Point(46, 112);
-            this.dosboxMemSizeLabel.Name = "dosboxMemSizeLabel";
-            this.dosboxMemSizeLabel.Size = new System.Drawing.Size(53, 13);
-            this.dosboxMemSizeLabel.TabIndex = 21;
-            this.dosboxMemSizeLabel.Text = "Mem Size";
-            // 
-            // memSizeScrollerText
-            // 
-            this.memSizeScrollerText.AutoSize = true;
-            this.memSizeScrollerText.Location = new System.Drawing.Point(292, 112);
-            this.memSizeScrollerText.Name = "memSizeScrollerText";
-            this.memSizeScrollerText.Size = new System.Drawing.Size(38, 13);
-            this.memSizeScrollerText.TabIndex = 22;
-            this.memSizeScrollerText.Text = "16 MB";
-            // 
-            // dosXMS
-            // 
-            this.dosXMS.AutoSize = true;
-            this.dosXMS.Checked = true;
-            this.dosXMS.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.dosXMS.Location = new System.Drawing.Point(100, 167);
-            this.dosXMS.Name = "dosXMS";
-            this.dosXMS.Size = new System.Drawing.Size(49, 17);
-            this.dosXMS.TabIndex = 23;
-            this.dosXMS.Text = "XMS";
-            this.dosXMS.UseVisualStyleBackColor = true;
-            // 
-            // dosEMS
-            // 
-            this.dosEMS.AutoSize = true;
-            this.dosEMS.Checked = true;
-            this.dosEMS.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.dosEMS.Location = new System.Drawing.Point(100, 190);
-            this.dosEMS.Name = "dosEMS";
-            this.dosEMS.Size = new System.Drawing.Size(49, 17);
-            this.dosEMS.TabIndex = 24;
-            this.dosEMS.Text = "EMS";
-            this.dosEMS.UseVisualStyleBackColor = true;
-            // 
-            // dosUMB
-            // 
-            this.dosUMB.AutoSize = true;
-            this.dosUMB.Checked = true;
-            this.dosUMB.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.dosUMB.Location = new System.Drawing.Point(100, 213);
-            this.dosUMB.Name = "dosUMB";
-            this.dosUMB.Size = new System.Drawing.Size(50, 17);
-            this.dosUMB.TabIndex = 25;
-            this.dosUMB.Text = "UMB";
-            this.dosUMB.UseVisualStyleBackColor = true;
-            // 
-            // dosXMSLabel
-            // 
-            this.dosXMSLabel.AutoSize = true;
-            this.dosXMSLabel.Location = new System.Drawing.Point(28, 168);
-            this.dosXMSLabel.Name = "dosXMSLabel";
-            this.dosXMSLabel.Size = new System.Drawing.Size(66, 13);
-            this.dosXMSLabel.TabIndex = 26;
-            this.dosXMSLabel.Text = "Enable XMS";
-            // 
-            // dosEMSLabel
-            // 
-            this.dosEMSLabel.AutoSize = true;
-            this.dosEMSLabel.Location = new System.Drawing.Point(27, 191);
-            this.dosEMSLabel.Name = "dosEMSLabel";
-            this.dosEMSLabel.Size = new System.Drawing.Size(66, 13);
-            this.dosEMSLabel.TabIndex = 27;
-            this.dosEMSLabel.Text = "Enable EMS";
-            // 
-            // dosUMBLabel
-            // 
-            this.dosUMBLabel.AutoSize = true;
-            this.dosUMBLabel.Location = new System.Drawing.Point(27, 214);
-            this.dosUMBLabel.Name = "dosUMBLabel";
-            this.dosUMBLabel.Size = new System.Drawing.Size(67, 13);
-            this.dosUMBLabel.TabIndex = 28;
-            this.dosUMBLabel.Text = "Enable UMB";
-            // 
-            // dosKeyLayout
-            // 
-            this.dosKeyLayout.FormattingEnabled = true;
-            this.dosKeyLayout.Items.AddRange(new object[] {
-            "auto",
-            "be - Belgium",
-            "br - Brazil",
-            "cf - Canadian French",
-            "cz - Czechoslovakia (Czech)",
-            "sl - Czechoslovakia (Slovak)",
-            "dk - Denmark",
-            "su - Finland",
-            "fr - France",
-            "gr - Germany",
-            "hu - Hungary",
-            "it - Italy",
-            "la - Latin America",
-            "nl - Netherlands",
-            "no - Norway",
-            "pl - Poland",
-            "po - Portugal",
-            "ru - Russian",
-            "sp - Spain",
-            "sw - Sweden",
-            "sf - Swizerland (French)",
-            "sg - Swizerland (German)",
-            "uk - United Kingdom",
-            "us - United States",
-            "dv103 - United States (Dvorak)",
-            "yu - Yugoslavia (Serbio-Croatian)"});
-            this.dosKeyLayout.Location = new System.Drawing.Point(100, 236);
-            this.dosKeyLayout.Name = "dosKeyLayout";
-            this.dosKeyLayout.Size = new System.Drawing.Size(256, 21);
-            this.dosKeyLayout.TabIndex = 29;
-            this.dosKeyLayout.Text = "auto";
-            // 
-            // keyboardLayoutLabel
-            // 
-            this.keyboardLayoutLabel.AutoSize = true;
-            this.keyboardLayoutLabel.Location = new System.Drawing.Point(7, 239);
-            this.keyboardLayoutLabel.Name = "keyboardLayoutLabel";
-            this.keyboardLayoutLabel.Size = new System.Drawing.Size(87, 13);
-            this.keyboardLayoutLabel.TabIndex = 30;
-            this.keyboardLayoutLabel.Text = "Keyboard Layout";
-            // 
-            // cpuCoreLabel
-            // 
-            this.cpuCoreLabel.AutoSize = true;
-            this.cpuCoreLabel.Location = new System.Drawing.Point(39, 299);
-            this.cpuCoreLabel.Name = "cpuCoreLabel";
-            this.cpuCoreLabel.Size = new System.Drawing.Size(54, 13);
-            this.cpuCoreLabel.TabIndex = 32;
-            this.cpuCoreLabel.Text = "CPU Core";
-            // 
-            // cpuCore
-            // 
-            this.cpuCore.FormattingEnabled = true;
-            this.cpuCore.Items.AddRange(new object[] {
-            "auto",
-            "dynamic",
+            this.sldPriorityMinimized.FormattingEnabled = true;
+            this.sldPriorityMinimized.Items.AddRange(new object[] {
+            "lowest",
+            "lower",
             "normal",
-            "simple"});
-            this.cpuCore.Location = new System.Drawing.Point(100, 296);
-            this.cpuCore.Name = "cpuCore";
-            this.cpuCore.Size = new System.Drawing.Size(256, 21);
-            this.cpuCore.TabIndex = 31;
-            this.cpuCore.Text = "dynamic";
+            "higher",
+            "highest",
+            "pause"});
+            this.sldPriorityMinimized.Location = new System.Drawing.Point(231, 235);
+            this.sldPriorityMinimized.Name = "sldPriorityMinimized";
+            this.sldPriorityMinimized.Size = new System.Drawing.Size(125, 21);
+            this.sldPriorityMinimized.TabIndex = 56;
+            this.sldPriorityMinimized.Text = "normal";
             // 
-            // cpuTypeLabel
+            // waitonerrorLabel
             // 
-            this.cpuTypeLabel.AutoSize = true;
-            this.cpuTypeLabel.Location = new System.Drawing.Point(37, 326);
-            this.cpuTypeLabel.Name = "cpuTypeLabel";
-            this.cpuTypeLabel.Size = new System.Drawing.Size(56, 13);
-            this.cpuTypeLabel.TabIndex = 34;
-            this.cpuTypeLabel.Text = "CPU Type";
+            this.waitonerrorLabel.AutoSize = true;
+            this.waitonerrorLabel.Location = new System.Drawing.Point(21, 197);
+            this.waitonerrorLabel.Name = "waitonerrorLabel";
+            this.waitonerrorLabel.Size = new System.Drawing.Size(71, 13);
+            this.waitonerrorLabel.TabIndex = 55;
+            this.waitonerrorLabel.Text = "Wait On Error";
             // 
-            // cpuCpuType
+            // sdlWaitOnError
             // 
-            this.cpuCpuType.FormattingEnabled = true;
-            this.cpuCpuType.Items.AddRange(new object[] {
-            "auto",
-            "386",
-            "386_slow",
-            "486_slow",
-            "pentium_slow",
-            "386_prefetch"});
-            this.cpuCpuType.Location = new System.Drawing.Point(101, 323);
-            this.cpuCpuType.Name = "cpuCpuType";
-            this.cpuCpuType.Size = new System.Drawing.Size(256, 21);
-            this.cpuCpuType.TabIndex = 33;
-            this.cpuCpuType.Text = "auto";
+            this.sdlWaitOnError.AutoSize = true;
+            this.sdlWaitOnError.Checked = true;
+            this.sdlWaitOnError.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.sdlWaitOnError.Location = new System.Drawing.Point(100, 196);
+            this.sdlWaitOnError.Name = "sdlWaitOnError";
+            this.sdlWaitOnError.Size = new System.Drawing.Size(90, 17);
+            this.sdlWaitOnError.TabIndex = 54;
+            this.sdlWaitOnError.Text = "Wait On Error";
+            this.sdlWaitOnError.UseVisualStyleBackColor = true;
             // 
-            // cpuCyclesLabel
+            // sensitivityLabel
             // 
-            this.cpuCyclesLabel.AutoSize = true;
-            this.cpuCyclesLabel.Location = new System.Drawing.Point(33, 353);
-            this.cpuCyclesLabel.Name = "cpuCyclesLabel";
-            this.cpuCyclesLabel.Size = new System.Drawing.Size(63, 13);
-            this.cpuCyclesLabel.TabIndex = 36;
-            this.cpuCyclesLabel.Text = "CPU Cycles";
+            this.sensitivityLabel.AutoSize = true;
+            this.sensitivityLabel.Location = new System.Drawing.Point(38, 172);
+            this.sensitivityLabel.Name = "sensitivityLabel";
+            this.sensitivityLabel.Size = new System.Drawing.Size(54, 13);
+            this.sensitivityLabel.TabIndex = 53;
+            this.sensitivityLabel.Text = "Sensitivity";
             // 
-            // cpuCycles
+            // sdlSensitivity
             // 
-            this.cpuCycles.FormattingEnabled = true;
-            this.cpuCycles.Items.AddRange(new object[] {
-            "auto",
-            "max"});
-            this.cpuCycles.Location = new System.Drawing.Point(100, 350);
-            this.cpuCycles.Name = "cpuCycles";
-            this.cpuCycles.Size = new System.Drawing.Size(256, 21);
-            this.cpuCycles.TabIndex = 35;
-            this.cpuCycles.Text = "max";
-            // 
-            // cpuCycleUp
-            // 
-            this.cpuCycleUp.Location = new System.Drawing.Point(100, 377);
-            this.cpuCycleUp.Name = "cpuCycleUp";
-            this.cpuCycleUp.Size = new System.Drawing.Size(256, 20);
-            this.cpuCycleUp.TabIndex = 37;
-            this.cpuCycleUp.Value = new decimal(new int[] {
-            10,
+            this.sdlSensitivity.Location = new System.Drawing.Point(99, 170);
+            this.sdlSensitivity.Maximum = new decimal(new int[] {
+            1000,
+            0,
+            0,
+            0});
+            this.sdlSensitivity.Minimum = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
+            this.sdlSensitivity.Name = "sdlSensitivity";
+            this.sdlSensitivity.Size = new System.Drawing.Size(256, 20);
+            this.sdlSensitivity.TabIndex = 52;
+            this.sdlSensitivity.Value = new decimal(new int[] {
+            100,
             0,
             0,
             0});
             // 
-            // cpuCycleDown
+            // outputLabel
             // 
-            this.cpuCycleDown.Location = new System.Drawing.Point(100, 403);
-            this.cpuCycleDown.Name = "cpuCycleDown";
-            this.cpuCycleDown.Size = new System.Drawing.Size(256, 20);
-            this.cpuCycleDown.TabIndex = 38;
-            this.cpuCycleDown.Value = new decimal(new int[] {
-            20,
-            0,
-            0,
-            0});
+            this.outputLabel.AutoSize = true;
+            this.outputLabel.Location = new System.Drawing.Point(54, 120);
+            this.outputLabel.Name = "outputLabel";
+            this.outputLabel.Size = new System.Drawing.Size(39, 13);
+            this.outputLabel.TabIndex = 51;
+            this.outputLabel.Text = "Output";
             // 
-            // cpuCycleDownLabel
+            // windowResLabel
             // 
-            this.cpuCycleDownLabel.AutoSize = true;
-            this.cpuCycleDownLabel.Location = new System.Drawing.Point(29, 405);
-            this.cpuCycleDownLabel.Name = "cpuCycleDownLabel";
-            this.cpuCycleDownLabel.Size = new System.Drawing.Size(64, 13);
-            this.cpuCycleDownLabel.TabIndex = 39;
-            this.cpuCycleDownLabel.Text = "Cycle Down";
+            this.windowResLabel.AutoSize = true;
+            this.windowResLabel.Location = new System.Drawing.Point(-2, 94);
+            this.windowResLabel.Name = "windowResLabel";
+            this.windowResLabel.Size = new System.Drawing.Size(99, 13);
+            this.windowResLabel.TabIndex = 50;
+            this.windowResLabel.Text = "Window Resolution";
             // 
-            // cpuCycleUpLabel
+            // sdlWindowRes
             // 
-            this.cpuCycleUpLabel.AutoSize = true;
-            this.cpuCycleUpLabel.Location = new System.Drawing.Point(43, 379);
-            this.cpuCycleUpLabel.Name = "cpuCycleUpLabel";
-            this.cpuCycleUpLabel.Size = new System.Drawing.Size(50, 13);
-            this.cpuCycleUpLabel.TabIndex = 40;
-            this.cpuCycleUpLabel.Text = "Cycle Up";
+            this.sdlWindowRes.Location = new System.Drawing.Point(100, 91);
+            this.sdlWindowRes.Name = "sdlWindowRes";
+            this.sdlWindowRes.Size = new System.Drawing.Size(256, 20);
+            this.sdlWindowRes.TabIndex = 49;
+            this.sdlWindowRes.Text = "1280x800";
+            // 
+            // label37
+            // 
+            this.label37.AutoSize = true;
+            this.label37.Location = new System.Drawing.Point(33, 43);
+            this.label37.Name = "label37";
+            this.label37.Size = new System.Drawing.Size(60, 13);
+            this.label37.TabIndex = 48;
+            this.label37.Text = "Full Double";
+            // 
+            // sdlFulldouble
+            // 
+            this.sdlFulldouble.AutoSize = true;
+            this.sdlFulldouble.Checked = true;
+            this.sdlFulldouble.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.sdlFulldouble.Location = new System.Drawing.Point(100, 42);
+            this.sdlFulldouble.Name = "sdlFulldouble";
+            this.sdlFulldouble.Size = new System.Drawing.Size(79, 17);
+            this.sdlFulldouble.TabIndex = 47;
+            this.sdlFulldouble.Text = "Full Double";
+            this.sdlFulldouble.UseVisualStyleBackColor = true;
             // 
             // fullResolutionLabel
             // 
@@ -1038,357 +1118,49 @@ namespace DosBoxZip2CFG
             this.sdlFullResolution.TabIndex = 31;
             this.sdlFullResolution.Text = "Fixed";
             // 
-            // label37
+            // label10
             // 
-            this.label37.AutoSize = true;
-            this.label37.Location = new System.Drawing.Point(33, 43);
-            this.label37.Name = "label37";
-            this.label37.Size = new System.Drawing.Size(60, 13);
-            this.label37.TabIndex = 48;
-            this.label37.Text = "Full Double";
+            this.label10.AutoSize = true;
+            this.label10.Location = new System.Drawing.Point(6, 323);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(42, 13);
+            this.label10.TabIndex = 1;
+            this.label10.Text = "Render";
             // 
-            // sdlFulldouble
+            // label9
             // 
-            this.sdlFulldouble.AutoSize = true;
-            this.sdlFulldouble.Checked = true;
-            this.sdlFulldouble.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.sdlFulldouble.Location = new System.Drawing.Point(100, 42);
-            this.sdlFulldouble.Name = "sdlFulldouble";
-            this.sdlFulldouble.Size = new System.Drawing.Size(79, 17);
-            this.sdlFulldouble.TabIndex = 47;
-            this.sdlFulldouble.Text = "Full Double";
-            this.sdlFulldouble.UseVisualStyleBackColor = true;
+            this.label9.AutoSize = true;
+            this.label9.Location = new System.Drawing.Point(6, 3);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(28, 13);
+            this.label9.TabIndex = 0;
+            this.label9.Text = "SDL";
             // 
-            // windowResLabel
+            // Audio
             // 
-            this.windowResLabel.AutoSize = true;
-            this.windowResLabel.Location = new System.Drawing.Point(-2, 94);
-            this.windowResLabel.Name = "windowResLabel";
-            this.windowResLabel.Size = new System.Drawing.Size(99, 13);
-            this.windowResLabel.TabIndex = 50;
-            this.windowResLabel.Text = "Window Resolution";
-            // 
-            // sdlWindowRes
-            // 
-            this.sdlWindowRes.Location = new System.Drawing.Point(100, 91);
-            this.sdlWindowRes.Name = "sdlWindowRes";
-            this.sdlWindowRes.Size = new System.Drawing.Size(256, 20);
-            this.sdlWindowRes.TabIndex = 49;
-            this.sdlWindowRes.Text = "1280x800";
-            // 
-            // outputLabel
-            // 
-            this.outputLabel.AutoSize = true;
-            this.outputLabel.Location = new System.Drawing.Point(54, 120);
-            this.outputLabel.Name = "outputLabel";
-            this.outputLabel.Size = new System.Drawing.Size(39, 13);
-            this.outputLabel.TabIndex = 51;
-            this.outputLabel.Text = "Output";
-            // 
-            // sensitivityLabel
-            // 
-            this.sensitivityLabel.AutoSize = true;
-            this.sensitivityLabel.Location = new System.Drawing.Point(38, 172);
-            this.sensitivityLabel.Name = "sensitivityLabel";
-            this.sensitivityLabel.Size = new System.Drawing.Size(54, 13);
-            this.sensitivityLabel.TabIndex = 53;
-            this.sensitivityLabel.Text = "Sensitivity";
-            // 
-            // sdlSensitivity
-            // 
-            this.sdlSensitivity.Location = new System.Drawing.Point(99, 170);
-            this.sdlSensitivity.Maximum = new decimal(new int[] {
-            1000,
-            0,
-            0,
-            0});
-            this.sdlSensitivity.Minimum = new decimal(new int[] {
-            1,
-            0,
-            0,
-            0});
-            this.sdlSensitivity.Name = "sdlSensitivity";
-            this.sdlSensitivity.Size = new System.Drawing.Size(256, 20);
-            this.sdlSensitivity.TabIndex = 52;
-            this.sdlSensitivity.Value = new decimal(new int[] {
-            100,
-            0,
-            0,
-            0});
-            // 
-            // waitonerrorLabel
-            // 
-            this.waitonerrorLabel.AutoSize = true;
-            this.waitonerrorLabel.Location = new System.Drawing.Point(21, 197);
-            this.waitonerrorLabel.Name = "waitonerrorLabel";
-            this.waitonerrorLabel.Size = new System.Drawing.Size(71, 13);
-            this.waitonerrorLabel.TabIndex = 55;
-            this.waitonerrorLabel.Text = "Wait On Error";
-            // 
-            // sdlWaitOnError
-            // 
-            this.sdlWaitOnError.AutoSize = true;
-            this.sdlWaitOnError.Checked = true;
-            this.sdlWaitOnError.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.sdlWaitOnError.Location = new System.Drawing.Point(100, 196);
-            this.sdlWaitOnError.Name = "sdlWaitOnError";
-            this.sdlWaitOnError.Size = new System.Drawing.Size(90, 17);
-            this.sdlWaitOnError.TabIndex = 54;
-            this.sdlWaitOnError.Text = "Wait On Error";
-            this.sdlWaitOnError.UseVisualStyleBackColor = true;
-            // 
-            // sldPriorityMinimized
-            // 
-            this.sldPriorityMinimized.FormattingEnabled = true;
-            this.sldPriorityMinimized.Items.AddRange(new object[] {
-            "lowest",
-            "lower",
-            "normal",
-            "higher",
-            "highest",
-            "pause"});
-            this.sldPriorityMinimized.Location = new System.Drawing.Point(231, 235);
-            this.sldPriorityMinimized.Name = "sldPriorityMinimized";
-            this.sldPriorityMinimized.Size = new System.Drawing.Size(125, 21);
-            this.sldPriorityMinimized.TabIndex = 56;
-            this.sldPriorityMinimized.Text = "normal";
-            // 
-            // label20
-            // 
-            this.label20.AutoSize = true;
-            this.label20.Location = new System.Drawing.Point(128, 219);
-            this.label20.Name = "label20";
-            this.label20.Size = new System.Drawing.Size(68, 13);
-            this.label20.TabIndex = 57;
-            this.label20.Text = "Not Focused";
-            // 
-            // sdlPriorityMinimized
-            // 
-            this.sdlPriorityMinimized.AutoSize = true;
-            this.sdlPriorityMinimized.Location = new System.Drawing.Point(272, 219);
-            this.sdlPriorityMinimized.Name = "sdlPriorityMinimized";
-            this.sdlPriorityMinimized.Size = new System.Drawing.Size(53, 13);
-            this.sdlPriorityMinimized.TabIndex = 58;
-            this.sdlPriorityMinimized.Text = "Minimized";
-            // 
-            // frameskipLabel
-            // 
-            this.frameskipLabel.AutoSize = true;
-            this.frameskipLabel.Location = new System.Drawing.Point(33, 345);
-            this.frameskipLabel.Name = "frameskipLabel";
-            this.frameskipLabel.Size = new System.Drawing.Size(55, 13);
-            this.frameskipLabel.TabIndex = 60;
-            this.frameskipLabel.Text = "Frameskip";
-            // 
-            // renderFrameskip
-            // 
-            this.renderFrameskip.Location = new System.Drawing.Point(99, 343);
-            this.renderFrameskip.Maximum = new decimal(new int[] {
-            1000,
-            0,
-            0,
-            0});
-            this.renderFrameskip.Name = "renderFrameskip";
-            this.renderFrameskip.Size = new System.Drawing.Size(256, 20);
-            this.renderFrameskip.TabIndex = 59;
-            // 
-            // scalerLabel
-            // 
-            this.scalerLabel.AutoSize = true;
-            this.scalerLabel.Location = new System.Drawing.Point(51, 395);
-            this.scalerLabel.Name = "scalerLabel";
-            this.scalerLabel.Size = new System.Drawing.Size(37, 13);
-            this.scalerLabel.TabIndex = 62;
-            this.scalerLabel.Text = "Scaler";
-            // 
-            // renderScaler
-            // 
-            this.renderScaler.FormattingEnabled = true;
-            this.renderScaler.Items.AddRange(new object[] {
-            "none",
-            "normal2x",
-            "normal3x",
-            "advmame2x",
-            "advmame3x",
-            "advinterp2x",
-            "advinterp3x",
-            "hq2x",
-            "hq3x",
-            "2xsai",
-            "super2xsai",
-            "supereagle",
-            "tv2x",
-            "tv3x",
-            "rgb2x",
-            "rgb3x",
-            "scan2x",
-            "scan3x"});
-            this.renderScaler.Location = new System.Drawing.Point(99, 392);
-            this.renderScaler.Name = "renderScaler";
-            this.renderScaler.Size = new System.Drawing.Size(256, 21);
-            this.renderScaler.TabIndex = 61;
-            this.renderScaler.Text = "normal3x";
-            // 
-            // nosoundLabel
-            // 
-            this.nosoundLabel.AutoSize = true;
-            this.nosoundLabel.Location = new System.Drawing.Point(38, 22);
-            this.nosoundLabel.Name = "nosoundLabel";
-            this.nosoundLabel.Size = new System.Drawing.Size(55, 13);
-            this.nosoundLabel.TabIndex = 50;
-            this.nosoundLabel.Text = "No Sound";
-            // 
-            // mixerNoSound
-            // 
-            this.mixerNoSound.AutoSize = true;
-            this.mixerNoSound.Location = new System.Drawing.Point(104, 21);
-            this.mixerNoSound.Name = "mixerNoSound";
-            this.mixerNoSound.Size = new System.Drawing.Size(74, 17);
-            this.mixerNoSound.TabIndex = 49;
-            this.mixerNoSound.Text = "No Sound";
-            this.mixerNoSound.UseVisualStyleBackColor = true;
-            // 
-            // rateLabel
-            // 
-            this.rateLabel.AutoSize = true;
-            this.rateLabel.Location = new System.Drawing.Point(63, 47);
-            this.rateLabel.Name = "rateLabel";
-            this.rateLabel.Size = new System.Drawing.Size(30, 13);
-            this.rateLabel.TabIndex = 53;
-            this.rateLabel.Text = "Rate";
-            // 
-            // mixerRate
-            // 
-            this.mixerRate.FormattingEnabled = true;
-            this.mixerRate.Items.AddRange(new object[] {
-            "44100",
-            "48000",
-            "32000",
-            "22050",
-            "16000",
-            "11025",
-            "8000",
-            "49716"});
-            this.mixerRate.Location = new System.Drawing.Point(100, 44);
-            this.mixerRate.Name = "mixerRate";
-            this.mixerRate.Size = new System.Drawing.Size(256, 21);
-            this.mixerRate.TabIndex = 52;
-            this.mixerRate.Text = "44100";
-            // 
-            // blocksizeLabel
-            // 
-            this.blocksizeLabel.AutoSize = true;
-            this.blocksizeLabel.Location = new System.Drawing.Point(36, 74);
-            this.blocksizeLabel.Name = "blocksizeLabel";
-            this.blocksizeLabel.Size = new System.Drawing.Size(57, 13);
-            this.blocksizeLabel.TabIndex = 55;
-            this.blocksizeLabel.Text = "Block Size";
-            // 
-            // mixerBlockSize
-            // 
-            this.mixerBlockSize.FormattingEnabled = true;
-            this.mixerBlockSize.Items.AddRange(new object[] {
-            "256",
-            "512",
-            "1024",
-            "2048",
-            "4096",
-            "8192"});
-            this.mixerBlockSize.Location = new System.Drawing.Point(100, 71);
-            this.mixerBlockSize.Name = "mixerBlockSize";
-            this.mixerBlockSize.Size = new System.Drawing.Size(256, 21);
-            this.mixerBlockSize.TabIndex = 54;
-            this.mixerBlockSize.Text = "256";
-            // 
-            // prebufferLabel
-            // 
-            this.prebufferLabel.AutoSize = true;
-            this.prebufferLabel.Location = new System.Drawing.Point(43, 100);
-            this.prebufferLabel.Name = "prebufferLabel";
-            this.prebufferLabel.Size = new System.Drawing.Size(50, 13);
-            this.prebufferLabel.TabIndex = 62;
-            this.prebufferLabel.Text = "Prebuffer";
-            // 
-            // mixerPreBuffer
-            // 
-            this.mixerPreBuffer.Location = new System.Drawing.Point(100, 98);
-            this.mixerPreBuffer.Maximum = new decimal(new int[] {
-            1000,
-            0,
-            0,
-            0});
-            this.mixerPreBuffer.Name = "mixerPreBuffer";
-            this.mixerPreBuffer.Size = new System.Drawing.Size(256, 20);
-            this.mixerPreBuffer.TabIndex = 61;
-            this.mixerPreBuffer.Value = new decimal(new int[] {
-            20,
-            0,
-            0,
-            0});
-            // 
-            // midiDeviceLabel
-            // 
-            this.midiDeviceLabel.AutoSize = true;
-            this.midiDeviceLabel.Location = new System.Drawing.Point(30, 173);
-            this.midiDeviceLabel.Name = "midiDeviceLabel";
-            this.midiDeviceLabel.Size = new System.Drawing.Size(63, 13);
-            this.midiDeviceLabel.TabIndex = 66;
-            this.midiDeviceLabel.Text = "Midi Device";
-            // 
-            // midiDevice
-            // 
-            this.midiDevice.FormattingEnabled = true;
-            this.midiDevice.Items.AddRange(new object[] {
-            "default",
-            "win32",
-            "alsa",
-            "oss",
-            "coreaudio",
-            "coremidi",
-            "none"});
-            this.midiDevice.Location = new System.Drawing.Point(100, 170);
-            this.midiDevice.Name = "midiDevice";
-            this.midiDevice.Size = new System.Drawing.Size(256, 21);
-            this.midiDevice.TabIndex = 65;
-            this.midiDevice.Text = "default";
-            // 
-            // midiMPULabel
-            // 
-            this.midiMPULabel.AutoSize = true;
-            this.midiMPULabel.Location = new System.Drawing.Point(44, 146);
-            this.midiMPULabel.Name = "midiMPULabel";
-            this.midiMPULabel.Size = new System.Drawing.Size(49, 13);
-            this.midiMPULabel.TabIndex = 64;
-            this.midiMPULabel.Text = "MPU401";
-            // 
-            // midiMPU
-            // 
-            this.midiMPU.FormattingEnabled = true;
-            this.midiMPU.Items.AddRange(new object[] {
-            "intelligent",
-            "uart",
-            "none"});
-            this.midiMPU.Location = new System.Drawing.Point(100, 143);
-            this.midiMPU.Name = "midiMPU";
-            this.midiMPU.Size = new System.Drawing.Size(256, 21);
-            this.midiMPU.TabIndex = 63;
-            this.midiMPU.Text = "intelligent";
-            // 
-            // midiConfigLabel
-            // 
-            this.midiConfigLabel.AutoSize = true;
-            this.midiConfigLabel.Location = new System.Drawing.Point(34, 200);
-            this.midiConfigLabel.Name = "midiConfigLabel";
-            this.midiConfigLabel.Size = new System.Drawing.Size(59, 13);
-            this.midiConfigLabel.TabIndex = 68;
-            this.midiConfigLabel.Text = "Midi Config";
-            // 
-            // midiConfig
-            // 
-            this.midiConfig.Location = new System.Drawing.Point(100, 197);
-            this.midiConfig.Name = "midiConfig";
-            this.midiConfig.Size = new System.Drawing.Size(256, 20);
-            this.midiConfig.TabIndex = 67;
+            this.Audio.Controls.Add(this.tabControl2);
+            this.Audio.Controls.Add(this.midiConfigLabel);
+            this.Audio.Controls.Add(this.midiConfig);
+            this.Audio.Controls.Add(this.midiDeviceLabel);
+            this.Audio.Controls.Add(this.midiDevice);
+            this.Audio.Controls.Add(this.midiMPULabel);
+            this.Audio.Controls.Add(this.midiMPU);
+            this.Audio.Controls.Add(this.prebufferLabel);
+            this.Audio.Controls.Add(this.mixerPreBuffer);
+            this.Audio.Controls.Add(this.blocksizeLabel);
+            this.Audio.Controls.Add(this.mixerBlockSize);
+            this.Audio.Controls.Add(this.rateLabel);
+            this.Audio.Controls.Add(this.mixerRate);
+            this.Audio.Controls.Add(this.nosoundLabel);
+            this.Audio.Controls.Add(this.mixerNoSound);
+            this.Audio.Controls.Add(this.label13);
+            this.Audio.Controls.Add(this.label11);
+            this.Audio.Location = new System.Drawing.Point(4, 22);
+            this.Audio.Name = "Audio";
+            this.Audio.Size = new System.Drawing.Size(365, 443);
+            this.Audio.TabIndex = 2;
+            this.Audio.Text = "Audio";
+            this.Audio.UseVisualStyleBackColor = true;
             // 
             // tabControl2
             // 
@@ -1429,28 +1201,6 @@ namespace DosBoxZip2CFG
             this.SBlaster.TabIndex = 0;
             this.SBlaster.Text = "SBlaster";
             this.SBlaster.UseVisualStyleBackColor = true;
-            // 
-            // GUS
-            // 
-            this.GUS.Controls.Add(this.UltraDIRLabel);
-            this.GUS.Controls.Add(this.gusUltraDir);
-            this.GUS.Controls.Add(this.GusDMALabel);
-            this.GUS.Controls.Add(this.gusDMA);
-            this.GUS.Controls.Add(this.GusIRQLabel);
-            this.GUS.Controls.Add(this.gusIRQ);
-            this.GUS.Controls.Add(this.GusBaseLabel);
-            this.GUS.Controls.Add(this.gusBase);
-            this.GUS.Controls.Add(this.GusRateLabel);
-            this.GUS.Controls.Add(this.gusRate);
-            this.GUS.Controls.Add(this.gusEnableGusLabel);
-            this.GUS.Controls.Add(this.gusEnableGus);
-            this.GUS.Location = new System.Drawing.Point(4, 22);
-            this.GUS.Name = "GUS";
-            this.GUS.Padding = new System.Windows.Forms.Padding(3);
-            this.GUS.Size = new System.Drawing.Size(357, 178);
-            this.GUS.TabIndex = 1;
-            this.GUS.Text = "GUS";
-            this.GUS.UseVisualStyleBackColor = true;
             // 
             // OPLRateLabel
             // 
@@ -1671,6 +1421,28 @@ namespace DosBoxZip2CFG
             this.sblasterSBType.TabIndex = 88;
             this.sblasterSBType.Text = "sb16";
             // 
+            // GUS
+            // 
+            this.GUS.Controls.Add(this.UltraDIRLabel);
+            this.GUS.Controls.Add(this.gusUltraDir);
+            this.GUS.Controls.Add(this.GusDMALabel);
+            this.GUS.Controls.Add(this.gusDMA);
+            this.GUS.Controls.Add(this.GusIRQLabel);
+            this.GUS.Controls.Add(this.gusIRQ);
+            this.GUS.Controls.Add(this.GusBaseLabel);
+            this.GUS.Controls.Add(this.gusBase);
+            this.GUS.Controls.Add(this.GusRateLabel);
+            this.GUS.Controls.Add(this.gusRate);
+            this.GUS.Controls.Add(this.gusEnableGusLabel);
+            this.GUS.Controls.Add(this.gusEnableGus);
+            this.GUS.Location = new System.Drawing.Point(4, 22);
+            this.GUS.Name = "GUS";
+            this.GUS.Padding = new System.Windows.Forms.Padding(3);
+            this.GUS.Size = new System.Drawing.Size(357, 178);
+            this.GUS.TabIndex = 1;
+            this.GUS.Text = "GUS";
+            this.GUS.UseVisualStyleBackColor = true;
+            // 
             // UltraDIRLabel
             // 
             this.UltraDIRLabel.AutoSize = true;
@@ -1831,6 +1603,23 @@ namespace DosBoxZip2CFG
             this.Speaker.Text = "Speaker";
             this.Speaker.UseVisualStyleBackColor = true;
             // 
+            // pcTandyLabel
+            // 
+            this.pcTandyLabel.AutoSize = true;
+            this.pcTandyLabel.Location = new System.Drawing.Point(25, 60);
+            this.pcTandyLabel.Name = "pcTandyLabel";
+            this.pcTandyLabel.Size = new System.Drawing.Size(54, 13);
+            this.pcTandyLabel.TabIndex = 117;
+            this.pcTandyLabel.Text = "PC Tandy";
+            // 
+            // speakerTandy
+            // 
+            this.speakerTandy.Location = new System.Drawing.Point(84, 57);
+            this.speakerTandy.Name = "speakerTandy";
+            this.speakerTandy.Size = new System.Drawing.Size(268, 20);
+            this.speakerTandy.TabIndex = 116;
+            this.speakerTandy.Text = "auto";
+            // 
             // tandyRateLabel
             // 
             this.tandyRateLabel.AutoSize = true;
@@ -1927,22 +1716,388 @@ namespace DosBoxZip2CFG
             this.speakerEnable.Text = "Enable PC Speaker";
             this.speakerEnable.UseVisualStyleBackColor = true;
             // 
-            // pcTandyLabel
+            // midiConfigLabel
             // 
-            this.pcTandyLabel.AutoSize = true;
-            this.pcTandyLabel.Location = new System.Drawing.Point(25, 60);
-            this.pcTandyLabel.Name = "pcTandyLabel";
-            this.pcTandyLabel.Size = new System.Drawing.Size(54, 13);
-            this.pcTandyLabel.TabIndex = 117;
-            this.pcTandyLabel.Text = "PC Tandy";
+            this.midiConfigLabel.AutoSize = true;
+            this.midiConfigLabel.Location = new System.Drawing.Point(34, 200);
+            this.midiConfigLabel.Name = "midiConfigLabel";
+            this.midiConfigLabel.Size = new System.Drawing.Size(59, 13);
+            this.midiConfigLabel.TabIndex = 68;
+            this.midiConfigLabel.Text = "Midi Config";
             // 
-            // speakerTandy
+            // midiConfig
             // 
-            this.speakerTandy.Location = new System.Drawing.Point(84, 57);
-            this.speakerTandy.Name = "speakerTandy";
-            this.speakerTandy.Size = new System.Drawing.Size(268, 20);
-            this.speakerTandy.TabIndex = 116;
-            this.speakerTandy.Text = "auto";
+            this.midiConfig.Location = new System.Drawing.Point(100, 197);
+            this.midiConfig.Name = "midiConfig";
+            this.midiConfig.Size = new System.Drawing.Size(256, 20);
+            this.midiConfig.TabIndex = 67;
+            // 
+            // midiDeviceLabel
+            // 
+            this.midiDeviceLabel.AutoSize = true;
+            this.midiDeviceLabel.Location = new System.Drawing.Point(30, 173);
+            this.midiDeviceLabel.Name = "midiDeviceLabel";
+            this.midiDeviceLabel.Size = new System.Drawing.Size(63, 13);
+            this.midiDeviceLabel.TabIndex = 66;
+            this.midiDeviceLabel.Text = "Midi Device";
+            // 
+            // midiDevice
+            // 
+            this.midiDevice.FormattingEnabled = true;
+            this.midiDevice.Items.AddRange(new object[] {
+            "default",
+            "win32",
+            "alsa",
+            "oss",
+            "coreaudio",
+            "coremidi",
+            "none"});
+            this.midiDevice.Location = new System.Drawing.Point(100, 170);
+            this.midiDevice.Name = "midiDevice";
+            this.midiDevice.Size = new System.Drawing.Size(256, 21);
+            this.midiDevice.TabIndex = 65;
+            this.midiDevice.Text = "default";
+            // 
+            // midiMPULabel
+            // 
+            this.midiMPULabel.AutoSize = true;
+            this.midiMPULabel.Location = new System.Drawing.Point(44, 146);
+            this.midiMPULabel.Name = "midiMPULabel";
+            this.midiMPULabel.Size = new System.Drawing.Size(49, 13);
+            this.midiMPULabel.TabIndex = 64;
+            this.midiMPULabel.Text = "MPU401";
+            // 
+            // midiMPU
+            // 
+            this.midiMPU.FormattingEnabled = true;
+            this.midiMPU.Items.AddRange(new object[] {
+            "intelligent",
+            "uart",
+            "none"});
+            this.midiMPU.Location = new System.Drawing.Point(100, 143);
+            this.midiMPU.Name = "midiMPU";
+            this.midiMPU.Size = new System.Drawing.Size(256, 21);
+            this.midiMPU.TabIndex = 63;
+            this.midiMPU.Text = "intelligent";
+            // 
+            // prebufferLabel
+            // 
+            this.prebufferLabel.AutoSize = true;
+            this.prebufferLabel.Location = new System.Drawing.Point(43, 100);
+            this.prebufferLabel.Name = "prebufferLabel";
+            this.prebufferLabel.Size = new System.Drawing.Size(50, 13);
+            this.prebufferLabel.TabIndex = 62;
+            this.prebufferLabel.Text = "Prebuffer";
+            // 
+            // mixerPreBuffer
+            // 
+            this.mixerPreBuffer.Location = new System.Drawing.Point(100, 98);
+            this.mixerPreBuffer.Maximum = new decimal(new int[] {
+            1000,
+            0,
+            0,
+            0});
+            this.mixerPreBuffer.Name = "mixerPreBuffer";
+            this.mixerPreBuffer.Size = new System.Drawing.Size(256, 20);
+            this.mixerPreBuffer.TabIndex = 61;
+            this.mixerPreBuffer.Value = new decimal(new int[] {
+            20,
+            0,
+            0,
+            0});
+            // 
+            // blocksizeLabel
+            // 
+            this.blocksizeLabel.AutoSize = true;
+            this.blocksizeLabel.Location = new System.Drawing.Point(36, 74);
+            this.blocksizeLabel.Name = "blocksizeLabel";
+            this.blocksizeLabel.Size = new System.Drawing.Size(57, 13);
+            this.blocksizeLabel.TabIndex = 55;
+            this.blocksizeLabel.Text = "Block Size";
+            // 
+            // mixerBlockSize
+            // 
+            this.mixerBlockSize.FormattingEnabled = true;
+            this.mixerBlockSize.Items.AddRange(new object[] {
+            "256",
+            "512",
+            "1024",
+            "2048",
+            "4096",
+            "8192"});
+            this.mixerBlockSize.Location = new System.Drawing.Point(100, 71);
+            this.mixerBlockSize.Name = "mixerBlockSize";
+            this.mixerBlockSize.Size = new System.Drawing.Size(256, 21);
+            this.mixerBlockSize.TabIndex = 54;
+            this.mixerBlockSize.Text = "256";
+            // 
+            // rateLabel
+            // 
+            this.rateLabel.AutoSize = true;
+            this.rateLabel.Location = new System.Drawing.Point(63, 47);
+            this.rateLabel.Name = "rateLabel";
+            this.rateLabel.Size = new System.Drawing.Size(30, 13);
+            this.rateLabel.TabIndex = 53;
+            this.rateLabel.Text = "Rate";
+            // 
+            // mixerRate
+            // 
+            this.mixerRate.FormattingEnabled = true;
+            this.mixerRate.Items.AddRange(new object[] {
+            "44100",
+            "48000",
+            "32000",
+            "22050",
+            "16000",
+            "11025",
+            "8000",
+            "49716"});
+            this.mixerRate.Location = new System.Drawing.Point(100, 44);
+            this.mixerRate.Name = "mixerRate";
+            this.mixerRate.Size = new System.Drawing.Size(256, 21);
+            this.mixerRate.TabIndex = 52;
+            this.mixerRate.Text = "44100";
+            // 
+            // nosoundLabel
+            // 
+            this.nosoundLabel.AutoSize = true;
+            this.nosoundLabel.Location = new System.Drawing.Point(38, 22);
+            this.nosoundLabel.Name = "nosoundLabel";
+            this.nosoundLabel.Size = new System.Drawing.Size(55, 13);
+            this.nosoundLabel.TabIndex = 50;
+            this.nosoundLabel.Text = "No Sound";
+            // 
+            // mixerNoSound
+            // 
+            this.mixerNoSound.AutoSize = true;
+            this.mixerNoSound.Location = new System.Drawing.Point(104, 21);
+            this.mixerNoSound.Name = "mixerNoSound";
+            this.mixerNoSound.Size = new System.Drawing.Size(74, 17);
+            this.mixerNoSound.TabIndex = 49;
+            this.mixerNoSound.Text = "No Sound";
+            this.mixerNoSound.UseVisualStyleBackColor = true;
+            // 
+            // label13
+            // 
+            this.label13.AutoSize = true;
+            this.label13.Location = new System.Drawing.Point(3, 131);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(26, 13);
+            this.label13.TabIndex = 2;
+            this.label13.Text = "Midi";
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Location = new System.Drawing.Point(3, 9);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(32, 13);
+            this.label11.TabIndex = 0;
+            this.label11.Text = "Mixer";
+            // 
+            // tabPage1
+            // 
+            this.tabPage1.Controls.Add(this.ipxLabel);
+            this.tabPage1.Controls.Add(this.ipxEnable);
+            this.tabPage1.Controls.Add(this.serial4Label);
+            this.tabPage1.Controls.Add(this.serial4);
+            this.tabPage1.Controls.Add(this.serial3Label);
+            this.tabPage1.Controls.Add(this.serial3);
+            this.tabPage1.Controls.Add(this.serial2Label);
+            this.tabPage1.Controls.Add(this.serial2);
+            this.tabPage1.Controls.Add(this.serial1Label);
+            this.tabPage1.Controls.Add(this.serial1);
+            this.tabPage1.Controls.Add(this.joystickButtonWrapLabel);
+            this.tabPage1.Controls.Add(this.joystickButtonWrap);
+            this.tabPage1.Controls.Add(this.joystickSwapLabel);
+            this.tabPage1.Controls.Add(this.joystickSwap);
+            this.tabPage1.Controls.Add(this.joystickAutoFireLabel);
+            this.tabPage1.Controls.Add(this.joystickAutoFire);
+            this.tabPage1.Controls.Add(this.joystickTypeLabel);
+            this.tabPage1.Controls.Add(this.joystickType);
+            this.tabPage1.Controls.Add(this.joystickTimedLabel);
+            this.tabPage1.Controls.Add(this.joystickTimed);
+            this.tabPage1.Controls.Add(this.label18);
+            this.tabPage1.Controls.Add(this.label17);
+            this.tabPage1.Controls.Add(this.label12);
+            this.tabPage1.Location = new System.Drawing.Point(4, 22);
+            this.tabPage1.Name = "tabPage1";
+            this.tabPage1.Size = new System.Drawing.Size(365, 443);
+            this.tabPage1.TabIndex = 3;
+            this.tabPage1.Text = "Devices";
+            this.tabPage1.UseVisualStyleBackColor = true;
+            // 
+            // ipxLabel
+            // 
+            this.ipxLabel.AutoSize = true;
+            this.ipxLabel.Location = new System.Drawing.Point(71, 320);
+            this.ipxLabel.Name = "ipxLabel";
+            this.ipxLabel.Size = new System.Drawing.Size(24, 13);
+            this.ipxLabel.TabIndex = 84;
+            this.ipxLabel.Text = "IPX";
+            // 
+            // ipxEnable
+            // 
+            this.ipxEnable.AutoSize = true;
+            this.ipxEnable.Location = new System.Drawing.Point(106, 319);
+            this.ipxEnable.Name = "ipxEnable";
+            this.ipxEnable.Size = new System.Drawing.Size(79, 17);
+            this.ipxEnable.TabIndex = 83;
+            this.ipxEnable.Text = "Enable IPX";
+            this.ipxEnable.UseVisualStyleBackColor = true;
+            // 
+            // serial4Label
+            // 
+            this.serial4Label.AutoSize = true;
+            this.serial4Label.Location = new System.Drawing.Point(50, 267);
+            this.serial4Label.Name = "serial4Label";
+            this.serial4Label.Size = new System.Drawing.Size(42, 13);
+            this.serial4Label.TabIndex = 82;
+            this.serial4Label.Text = "Serial 4";
+            // 
+            // serial4
+            // 
+            this.serial4.FormattingEnabled = true;
+            this.serial4.Items.AddRange(new object[] {
+            "dummy",
+            "disabled",
+            "modem",
+            "nullmodem",
+            "directserial"});
+            this.serial4.Location = new System.Drawing.Point(106, 264);
+            this.serial4.Name = "serial4";
+            this.serial4.Size = new System.Drawing.Size(256, 21);
+            this.serial4.TabIndex = 81;
+            this.serial4.Text = "disabled";
+            // 
+            // serial3Label
+            // 
+            this.serial3Label.AutoSize = true;
+            this.serial3Label.Location = new System.Drawing.Point(50, 240);
+            this.serial3Label.Name = "serial3Label";
+            this.serial3Label.Size = new System.Drawing.Size(42, 13);
+            this.serial3Label.TabIndex = 80;
+            this.serial3Label.Text = "Serial 3";
+            // 
+            // serial3
+            // 
+            this.serial3.FormattingEnabled = true;
+            this.serial3.Items.AddRange(new object[] {
+            "dummy",
+            "disabled",
+            "modem",
+            "nullmodem",
+            "directserial"});
+            this.serial3.Location = new System.Drawing.Point(106, 237);
+            this.serial3.Name = "serial3";
+            this.serial3.Size = new System.Drawing.Size(256, 21);
+            this.serial3.TabIndex = 79;
+            this.serial3.Text = "disabled";
+            // 
+            // serial2Label
+            // 
+            this.serial2Label.AutoSize = true;
+            this.serial2Label.Location = new System.Drawing.Point(50, 213);
+            this.serial2Label.Name = "serial2Label";
+            this.serial2Label.Size = new System.Drawing.Size(42, 13);
+            this.serial2Label.TabIndex = 78;
+            this.serial2Label.Text = "Serial 2";
+            // 
+            // serial2
+            // 
+            this.serial2.FormattingEnabled = true;
+            this.serial2.Items.AddRange(new object[] {
+            "dummy",
+            "disabled",
+            "modem",
+            "nullmodem",
+            "directserial"});
+            this.serial2.Location = new System.Drawing.Point(106, 210);
+            this.serial2.Name = "serial2";
+            this.serial2.Size = new System.Drawing.Size(256, 21);
+            this.serial2.TabIndex = 77;
+            this.serial2.Text = "dummy";
+            // 
+            // serial1Label
+            // 
+            this.serial1Label.AutoSize = true;
+            this.serial1Label.Location = new System.Drawing.Point(50, 186);
+            this.serial1Label.Name = "serial1Label";
+            this.serial1Label.Size = new System.Drawing.Size(42, 13);
+            this.serial1Label.TabIndex = 76;
+            this.serial1Label.Text = "Serial 1";
+            // 
+            // serial1
+            // 
+            this.serial1.FormattingEnabled = true;
+            this.serial1.Items.AddRange(new object[] {
+            "dummy",
+            "disabled",
+            "modem",
+            "nullmodem",
+            "directserial"});
+            this.serial1.Location = new System.Drawing.Point(106, 183);
+            this.serial1.Name = "serial1";
+            this.serial1.Size = new System.Drawing.Size(256, 21);
+            this.serial1.TabIndex = 75;
+            this.serial1.Text = "dummy";
+            // 
+            // joystickButtonWrapLabel
+            // 
+            this.joystickButtonWrapLabel.AutoSize = true;
+            this.joystickButtonWrapLabel.Location = new System.Drawing.Point(25, 126);
+            this.joystickButtonWrapLabel.Name = "joystickButtonWrapLabel";
+            this.joystickButtonWrapLabel.Size = new System.Drawing.Size(67, 13);
+            this.joystickButtonWrapLabel.TabIndex = 74;
+            this.joystickButtonWrapLabel.Text = "Button Wrap";
+            // 
+            // joystickButtonWrap
+            // 
+            this.joystickButtonWrap.AutoSize = true;
+            this.joystickButtonWrap.Location = new System.Drawing.Point(106, 125);
+            this.joystickButtonWrap.Name = "joystickButtonWrap";
+            this.joystickButtonWrap.Size = new System.Drawing.Size(86, 17);
+            this.joystickButtonWrap.TabIndex = 73;
+            this.joystickButtonWrap.Text = "Button Wrap";
+            this.joystickButtonWrap.UseVisualStyleBackColor = true;
+            // 
+            // joystickSwapLabel
+            // 
+            this.joystickSwapLabel.AutoSize = true;
+            this.joystickSwapLabel.Location = new System.Drawing.Point(38, 103);
+            this.joystickSwapLabel.Name = "joystickSwapLabel";
+            this.joystickSwapLabel.Size = new System.Drawing.Size(54, 13);
+            this.joystickSwapLabel.TabIndex = 72;
+            this.joystickSwapLabel.Text = "Swap 3/4";
+            // 
+            // joystickSwap
+            // 
+            this.joystickSwap.AutoSize = true;
+            this.joystickSwap.Location = new System.Drawing.Point(106, 102);
+            this.joystickSwap.Name = "joystickSwap";
+            this.joystickSwap.Size = new System.Drawing.Size(73, 17);
+            this.joystickSwap.TabIndex = 71;
+            this.joystickSwap.Text = "Swap 3/4";
+            this.joystickSwap.UseVisualStyleBackColor = true;
+            // 
+            // joystickAutoFireLabel
+            // 
+            this.joystickAutoFireLabel.AutoSize = true;
+            this.joystickAutoFireLabel.Location = new System.Drawing.Point(43, 80);
+            this.joystickAutoFireLabel.Name = "joystickAutoFireLabel";
+            this.joystickAutoFireLabel.Size = new System.Drawing.Size(49, 13);
+            this.joystickAutoFireLabel.TabIndex = 70;
+            this.joystickAutoFireLabel.Text = "Auto Fire";
+            // 
+            // joystickAutoFire
+            // 
+            this.joystickAutoFire.AutoSize = true;
+            this.joystickAutoFire.Location = new System.Drawing.Point(106, 79);
+            this.joystickAutoFire.Name = "joystickAutoFire";
+            this.joystickAutoFire.Size = new System.Drawing.Size(68, 17);
+            this.joystickAutoFire.TabIndex = 69;
+            this.joystickAutoFire.Text = "Auto Fire";
+            this.joystickAutoFire.UseVisualStyleBackColor = true;
             // 
             // joystickTypeLabel
             // 
@@ -1987,196 +2142,41 @@ namespace DosBoxZip2CFG
             this.joystickTimed.Text = "Timed";
             this.joystickTimed.UseVisualStyleBackColor = true;
             // 
-            // joystickAutoFireLabel
+            // label18
             // 
-            this.joystickAutoFireLabel.AutoSize = true;
-            this.joystickAutoFireLabel.Location = new System.Drawing.Point(43, 80);
-            this.joystickAutoFireLabel.Name = "joystickAutoFireLabel";
-            this.joystickAutoFireLabel.Size = new System.Drawing.Size(49, 13);
-            this.joystickAutoFireLabel.TabIndex = 70;
-            this.joystickAutoFireLabel.Text = "Auto Fire";
+            this.label18.AutoSize = true;
+            this.label18.Location = new System.Drawing.Point(13, 304);
+            this.label18.Name = "label18";
+            this.label18.Size = new System.Drawing.Size(24, 13);
+            this.label18.TabIndex = 2;
+            this.label18.Text = "IPX";
             // 
-            // joystickAutoFire
+            // label17
             // 
-            this.joystickAutoFire.AutoSize = true;
-            this.joystickAutoFire.Location = new System.Drawing.Point(106, 79);
-            this.joystickAutoFire.Name = "joystickAutoFire";
-            this.joystickAutoFire.Size = new System.Drawing.Size(68, 17);
-            this.joystickAutoFire.TabIndex = 69;
-            this.joystickAutoFire.Text = "Auto Fire";
-            this.joystickAutoFire.UseVisualStyleBackColor = true;
+            this.label17.AutoSize = true;
+            this.label17.Location = new System.Drawing.Point(13, 167);
+            this.label17.Name = "label17";
+            this.label17.Size = new System.Drawing.Size(33, 13);
+            this.label17.TabIndex = 1;
+            this.label17.Text = "Serial";
             // 
-            // joystickSwapLabel
+            // label12
             // 
-            this.joystickSwapLabel.AutoSize = true;
-            this.joystickSwapLabel.Location = new System.Drawing.Point(38, 103);
-            this.joystickSwapLabel.Name = "joystickSwapLabel";
-            this.joystickSwapLabel.Size = new System.Drawing.Size(54, 13);
-            this.joystickSwapLabel.TabIndex = 72;
-            this.joystickSwapLabel.Text = "Swap 3/4";
+            this.label12.AutoSize = true;
+            this.label12.Location = new System.Drawing.Point(13, 11);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(45, 13);
+            this.label12.TabIndex = 0;
+            this.label12.Text = "Joystick";
             // 
-            // joystickSwap
+            // label19
             // 
-            this.joystickSwap.AutoSize = true;
-            this.joystickSwap.Location = new System.Drawing.Point(106, 102);
-            this.joystickSwap.Name = "joystickSwap";
-            this.joystickSwap.Size = new System.Drawing.Size(73, 17);
-            this.joystickSwap.TabIndex = 71;
-            this.joystickSwap.Text = "Swap 3/4";
-            this.joystickSwap.UseVisualStyleBackColor = true;
-            // 
-            // joystickButtonWrapLabel
-            // 
-            this.joystickButtonWrapLabel.AutoSize = true;
-            this.joystickButtonWrapLabel.Location = new System.Drawing.Point(25, 126);
-            this.joystickButtonWrapLabel.Name = "joystickButtonWrapLabel";
-            this.joystickButtonWrapLabel.Size = new System.Drawing.Size(67, 13);
-            this.joystickButtonWrapLabel.TabIndex = 74;
-            this.joystickButtonWrapLabel.Text = "Button Wrap";
-            // 
-            // joystickButtonWrap
-            // 
-            this.joystickButtonWrap.AutoSize = true;
-            this.joystickButtonWrap.Location = new System.Drawing.Point(106, 125);
-            this.joystickButtonWrap.Name = "joystickButtonWrap";
-            this.joystickButtonWrap.Size = new System.Drawing.Size(86, 17);
-            this.joystickButtonWrap.TabIndex = 73;
-            this.joystickButtonWrap.Text = "Button Wrap";
-            this.joystickButtonWrap.UseVisualStyleBackColor = true;
-            // 
-            // serial1Label
-            // 
-            this.serial1Label.AutoSize = true;
-            this.serial1Label.Location = new System.Drawing.Point(50, 186);
-            this.serial1Label.Name = "serial1Label";
-            this.serial1Label.Size = new System.Drawing.Size(42, 13);
-            this.serial1Label.TabIndex = 76;
-            this.serial1Label.Text = "Serial 1";
-            // 
-            // serial1
-            // 
-            this.serial1.FormattingEnabled = true;
-            this.serial1.Items.AddRange(new object[] {
-            "dummy",
-            "disabled",
-            "modem",
-            "nullmodem",
-            "directserial"});
-            this.serial1.Location = new System.Drawing.Point(106, 183);
-            this.serial1.Name = "serial1";
-            this.serial1.Size = new System.Drawing.Size(256, 21);
-            this.serial1.TabIndex = 75;
-            this.serial1.Text = "dummy";
-            // 
-            // serial2Label
-            // 
-            this.serial2Label.AutoSize = true;
-            this.serial2Label.Location = new System.Drawing.Point(50, 213);
-            this.serial2Label.Name = "serial2Label";
-            this.serial2Label.Size = new System.Drawing.Size(42, 13);
-            this.serial2Label.TabIndex = 78;
-            this.serial2Label.Text = "Serial 2";
-            // 
-            // serial2
-            // 
-            this.serial2.FormattingEnabled = true;
-            this.serial2.Items.AddRange(new object[] {
-            "dummy",
-            "disabled",
-            "modem",
-            "nullmodem",
-            "directserial"});
-            this.serial2.Location = new System.Drawing.Point(106, 210);
-            this.serial2.Name = "serial2";
-            this.serial2.Size = new System.Drawing.Size(256, 21);
-            this.serial2.TabIndex = 77;
-            this.serial2.Text = "dummy";
-            // 
-            // serial3Label
-            // 
-            this.serial3Label.AutoSize = true;
-            this.serial3Label.Location = new System.Drawing.Point(50, 240);
-            this.serial3Label.Name = "serial3Label";
-            this.serial3Label.Size = new System.Drawing.Size(42, 13);
-            this.serial3Label.TabIndex = 80;
-            this.serial3Label.Text = "Serial 3";
-            // 
-            // serial3
-            // 
-            this.serial3.FormattingEnabled = true;
-            this.serial3.Items.AddRange(new object[] {
-            "dummy",
-            "disabled",
-            "modem",
-            "nullmodem",
-            "directserial"});
-            this.serial3.Location = new System.Drawing.Point(106, 237);
-            this.serial3.Name = "serial3";
-            this.serial3.Size = new System.Drawing.Size(256, 21);
-            this.serial3.TabIndex = 79;
-            this.serial3.Text = "disabled";
-            // 
-            // serial4Label
-            // 
-            this.serial4Label.AutoSize = true;
-            this.serial4Label.Location = new System.Drawing.Point(50, 267);
-            this.serial4Label.Name = "serial4Label";
-            this.serial4Label.Size = new System.Drawing.Size(42, 13);
-            this.serial4Label.TabIndex = 82;
-            this.serial4Label.Text = "Serial 4";
-            // 
-            // serial4
-            // 
-            this.serial4.FormattingEnabled = true;
-            this.serial4.Items.AddRange(new object[] {
-            "dummy",
-            "disabled",
-            "modem",
-            "nullmodem",
-            "directserial"});
-            this.serial4.Location = new System.Drawing.Point(106, 264);
-            this.serial4.Name = "serial4";
-            this.serial4.Size = new System.Drawing.Size(256, 21);
-            this.serial4.TabIndex = 81;
-            this.serial4.Text = "disabled";
-            // 
-            // ipxLabel
-            // 
-            this.ipxLabel.AutoSize = true;
-            this.ipxLabel.Location = new System.Drawing.Point(71, 320);
-            this.ipxLabel.Name = "ipxLabel";
-            this.ipxLabel.Size = new System.Drawing.Size(24, 13);
-            this.ipxLabel.TabIndex = 84;
-            this.ipxLabel.Text = "IPX";
-            // 
-            // ipxEnable
-            // 
-            this.ipxEnable.AutoSize = true;
-            this.ipxEnable.Location = new System.Drawing.Point(106, 319);
-            this.ipxEnable.Name = "ipxEnable";
-            this.ipxEnable.Size = new System.Drawing.Size(79, 17);
-            this.ipxEnable.TabIndex = 83;
-            this.ipxEnable.Text = "Enable IPX";
-            this.ipxEnable.UseVisualStyleBackColor = true;
-            // 
-            // useScanCodesLabel
-            // 
-            this.useScanCodesLabel.AutoSize = true;
-            this.useScanCodesLabel.Location = new System.Drawing.Point(3, 289);
-            this.useScanCodesLabel.Name = "useScanCodesLabel";
-            this.useScanCodesLabel.Size = new System.Drawing.Size(87, 13);
-            this.useScanCodesLabel.TabIndex = 64;
-            this.useScanCodesLabel.Text = "Use Scan Codes";
-            // 
-            // sdlUseScanCodes
-            // 
-            this.sdlUseScanCodes.AutoSize = true;
-            this.sdlUseScanCodes.Location = new System.Drawing.Point(99, 288);
-            this.sdlUseScanCodes.Name = "sdlUseScanCodes";
-            this.sdlUseScanCodes.Size = new System.Drawing.Size(106, 17);
-            this.sdlUseScanCodes.TabIndex = 63;
-            this.sdlUseScanCodes.Text = "Use Scan Codes";
-            this.sdlUseScanCodes.UseVisualStyleBackColor = true;
+            this.label19.AutoSize = true;
+            this.label19.Location = new System.Drawing.Point(831, 12);
+            this.label19.Name = "label19";
+            this.label19.Size = new System.Drawing.Size(126, 13);
+            this.label19.TabIndex = 13;
+            this.label19.Text = "DOSBOX Config Settings";
             // 
             // save
             // 
@@ -2228,18 +2228,15 @@ namespace DosBoxZip2CFG
             this.configSettings.ResumeLayout(false);
             this.Core.ResumeLayout(false);
             this.Core.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.cpuCycleDown)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.cpuCycleUp)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dosboxMemsize)).EndInit();
             this.Video.ResumeLayout(false);
             this.Video.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.renderFrameskip)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.sdlSensitivity)).EndInit();
             this.Audio.ResumeLayout(false);
             this.Audio.PerformLayout();
-            this.tabPage1.ResumeLayout(false);
-            this.tabPage1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dosboxMemsize)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.cpuCycleUp)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.cpuCycleDown)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.sdlSensitivity)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.renderFrameskip)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.mixerPreBuffer)).EndInit();
             this.tabControl2.ResumeLayout(false);
             this.SBlaster.ResumeLayout(false);
             this.SBlaster.PerformLayout();
@@ -2247,6 +2244,9 @@ namespace DosBoxZip2CFG
             this.GUS.PerformLayout();
             this.Speaker.ResumeLayout(false);
             this.Speaker.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.mixerPreBuffer)).EndInit();
+            this.tabPage1.ResumeLayout(false);
+            this.tabPage1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 

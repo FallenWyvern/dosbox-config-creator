@@ -10,3 +10,15 @@ C:\romm\dosbox-config-creator\DosBoxZip2CFG\obj\Release\DosBoxZip2CFG.csproj.Cor
 C:\romm\dosbox-config-creator\DosBoxZip2CFG\obj\Release\DosBoxZip2CFG.csproj.CopyComplete
 C:\romm\dosbox-config-creator\DosBoxZip2CFG\obj\Release\DosBoxZip2CFG.exe
 C:\romm\dosbox-config-creator\DosBoxZip2CFG\obj\Release\DosBoxZip2CFG.pdb
+C:\Users\b_hol\source\repos\DosBoxZip2CFG\dosbox-config-creator\DosBoxZip2CFG\bin\Release\DosBoxZip2CFG.exe.config
+C:\Users\b_hol\source\repos\DosBoxZip2CFG\dosbox-config-creator\DosBoxZip2CFG\bin\Release\DosBoxZip2CFG.exe
+C:\Users\b_hol\source\repos\DosBoxZip2CFG\dosbox-config-creator\DosBoxZip2CFG\bin\Release\DosBoxZip2CFG.pdb
+C:\Users\b_hol\source\repos\DosBoxZip2CFG\dosbox-config-creator\DosBoxZip2CFG\bin\Release\System.IO.Compression.dll
+C:\Users\b_hol\source\repos\DosBoxZip2CFG\dosbox-config-creator\DosBoxZip2CFG\bin\Release\System.IO.Compression.ZipFile.dll
+C:\Users\b_hol\source\repos\DosBoxZip2CFG\dosbox-config-creator\DosBoxZip2CFG\obj\Release\DosBoxZip2CFG.Form1.resources
+C:\Users\b_hol\source\repos\DosBoxZip2CFG\dosbox-config-creator\DosBoxZip2CFG\obj\Release\DosBoxZip2CFG.Properties.Resources.resources
+C:\Users\b_hol\source\repos\DosBoxZip2CFG\dosbox-config-creator\DosBoxZip2CFG\obj\Release\DosBoxZip2CFG.csproj.GenerateResource.cache
+C:\Users\b_hol\source\repos\DosBoxZip2CFG\dosbox-config-creator\DosBoxZip2CFG\obj\Release\DosBoxZip2CFG.csproj.CoreCompileInputs.cache
+C:\Users\b_hol\source\repos\DosBoxZip2CFG\dosbox-config-creator\DosBoxZip2CFG\obj\Release\DosBoxZip2CFG.csproj.CopyComplete
+C:\Users\b_hol\source\repos\DosBoxZip2CFG\dosbox-config-creator\DosBoxZip2CFG\obj\Release\DosBoxZip2CFG.exe
+C:\Users\b_hol\source\repos\DosBoxZip2CFG\dosbox-config-creator\DosBoxZip2CFG\obj\Release\DosBoxZip2CFG.pdb

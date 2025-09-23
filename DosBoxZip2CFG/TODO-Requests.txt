@@ -1,0 +1,10 @@
+﻿TODO:
+
+Requests
+	Can you make it so the app can see the contents of the ISO/BIN?
+	Also can you make it so you can drag the folder in instead of a zip?
+
+
+Design
+	Add tooltips for all options
+	Create switches for games like Afterlife

@@ -74,6 +74,7 @@ namespace DosBoxZip2CFG
         {            
             configFileOutput.Text += "@echo off" + Environment.NewLine;
             configFileOutput.Text += "mount c \"..\"" + Environment.NewLine;
+            configFileOutput.Text += "c:" + Environment.NewLine;
 
             if (textBox2.Text.Trim().Length > 3)
             {
