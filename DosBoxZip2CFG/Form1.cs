@@ -304,7 +304,10 @@ namespace DosBoxZip2CFG
                     }
 
                     while (deleteMe.Count > 0) {
-                        deleteMe[0].Delete();
+                        if (MessageBox.Show("Conf File Detected: Delete " + deleteMe[0].Name + "?", "", MessageBoxButtons.YesNo) == DialogResult.Yes)
+                        {
+                            deleteMe[0].Delete();
+                        }
                         deleteMe.RemoveAt(0);
                     }
 
