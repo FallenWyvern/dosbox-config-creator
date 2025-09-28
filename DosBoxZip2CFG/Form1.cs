@@ -160,8 +160,8 @@ namespace DosBoxZip2CFG
         private void createBAT()
         {
             configFileOutput.Text += "@echo off" + Environment.NewLine;
-            configFileOutput.Text += "mount c \"..\"" + Environment.NewLine;
-            configFileOutput.Text += "c:" + Environment.NewLine;
+            configFileOutput.Text += "mount " + driveMount.Text + " \"..\"" + Environment.NewLine;
+            configFileOutput.Text += driveMount.Text + ":" + Environment.NewLine;
 
             if (isDir)
             {
@@ -196,7 +196,7 @@ namespace DosBoxZip2CFG
                         }
                     }
 
-                    configFileOutput.Text += "imgmount d " + isoFile + " -t iso -fs iso" + Environment.NewLine;                                        
+                    configFileOutput.Text += "imgmount " + isomountPath.Text + " " + isoFile + " -t iso -fs iso" + Environment.NewLine;                                        
                     while (isoPathCount > 0)
                     {
                         configFileOutput.Text += "cd.." + Environment.NewLine;
@@ -230,7 +230,7 @@ namespace DosBoxZip2CFG
                         configFileOutput.Text += "cd " + pathPart + Environment.NewLine;
                     }
 
-                    configFileOutput.Text += "imgmount d " + isoFile + " -t iso -fs iso" + Environment.NewLine;
+                    configFileOutput.Text += "imgmount " + isomountPath.Text + " " + isoFile + " -t iso -fs iso" + Environment.NewLine;
                     configFileOutput.Text += "cd/" + Environment.NewLine;
                 }
 
@@ -293,7 +293,22 @@ namespace DosBoxZip2CFG
             {
                 using (ZipArchive archive = ZipFile.Open(zipFile, ZipArchiveMode.Update))
                 {
-                    archive.CreateEntryFromFile(sourceFilePath, entryNameInZip, CompressionLevel.Optimal);
+                    List<ZipArchiveEntry> deleteMe = new List<ZipArchiveEntry>();
+                    foreach (var item in archive.Entries)
+                    {                        
+                        if (item.Name.ToLower().Contains("conf"))
+                        {
+                            Console.WriteLine(item.Name);
+                            deleteMe.Add(item);
+                        }
+                    }
+
+                    while (deleteMe.Count > 0) {
+                        deleteMe[0].Delete();
+                        deleteMe.RemoveAt(0);
+                    }
+
+                    archive.CreateEntryFromFile(sourceFilePath, entryNameInZip, CompressionLevel.Optimal);                    
                 }
             }
 

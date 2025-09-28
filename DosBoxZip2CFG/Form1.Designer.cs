@@ -198,6 +198,10 @@ namespace DosBoxZip2CFG
             this.dcctToolTip = new System.Windows.Forms.ToolTip(this.components);
             this.save = new System.Windows.Forms.Button();
             this.insert = new System.Windows.Forms.Button();
+            this.driveMount = new System.Windows.Forms.ComboBox();
+            this.label14 = new System.Windows.Forms.Label();
+            this.label15 = new System.Windows.Forms.Label();
+            this.isomountPath = new System.Windows.Forms.ComboBox();
             this.zipDropZone.SuspendLayout();
             this.configSettings.SuspendLayout();
             this.Core.SuspendLayout();
@@ -253,7 +257,7 @@ namespace DosBoxZip2CFG
             this.executableList.HorizontalScrollbar = true;
             this.executableList.Location = new System.Drawing.Point(471, 28);
             this.executableList.Name = "executableList";
-            this.executableList.Size = new System.Drawing.Size(235, 186);
+            this.executableList.Size = new System.Drawing.Size(235, 121);
             this.executableList.TabIndex = 2;
             this.executableList.SelectedIndexChanged += new System.EventHandler(this.listBox2_SelectedIndexChanged);
             // 
@@ -269,7 +273,7 @@ namespace DosBoxZip2CFG
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(471, 217);
+            this.label2.Location = new System.Drawing.Point(471, 181);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(41, 13);
             this.label2.TabIndex = 5;
@@ -279,9 +283,9 @@ namespace DosBoxZip2CFG
             // 
             this.isoList.FormattingEnabled = true;
             this.isoList.HorizontalScrollbar = true;
-            this.isoList.Location = new System.Drawing.Point(471, 233);
+            this.isoList.Location = new System.Drawing.Point(471, 200);
             this.isoList.Name = "isoList";
-            this.isoList.Size = new System.Drawing.Size(235, 134);
+            this.isoList.Size = new System.Drawing.Size(235, 108);
             this.isoList.TabIndex = 4;
             this.isoList.SelectedIndexChanged += new System.EventHandler(this.listBox3_SelectedIndexChanged);
             // 
@@ -2198,11 +2202,61 @@ namespace DosBoxZip2CFG
             this.insert.UseVisualStyleBackColor = true;
             this.insert.Click += new System.EventHandler(this.insert_Click);
             // 
+            // driveMount
+            // 
+            this.driveMount.FormattingEnabled = true;
+            this.driveMount.Items.AddRange(new object[] {
+            "c",
+            "a",
+            "d",
+            "z"});
+            this.driveMount.Location = new System.Drawing.Point(637, 151);
+            this.driveMount.Name = "driveMount";
+            this.driveMount.Size = new System.Drawing.Size(66, 21);
+            this.driveMount.TabIndex = 41;
+            this.driveMount.Text = "c";
+            // 
+            // label14
+            // 
+            this.label14.AutoSize = true;
+            this.label14.Location = new System.Drawing.Point(471, 154);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(52, 13);
+            this.label14.TabIndex = 42;
+            this.label14.Text = "Mount As";
+            // 
+            // label15
+            // 
+            this.label15.AutoSize = true;
+            this.label15.Location = new System.Drawing.Point(471, 317);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(52, 13);
+            this.label15.TabIndex = 44;
+            this.label15.Text = "Mount As";
+            // 
+            // isomountPath
+            // 
+            this.isomountPath.FormattingEnabled = true;
+            this.isomountPath.Items.AddRange(new object[] {
+            "c",
+            "a",
+            "d",
+            "z"});
+            this.isomountPath.Location = new System.Drawing.Point(637, 314);
+            this.isomountPath.Name = "isomountPath";
+            this.isomountPath.Size = new System.Drawing.Size(66, 21);
+            this.isomountPath.TabIndex = 43;
+            this.isomountPath.Text = "d";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1084, 540);
+            this.Controls.Add(this.label15);
+            this.Controls.Add(this.isomountPath);
+            this.Controls.Add(this.label14);
+            this.Controls.Add(this.driveMount);
             this.Controls.Add(this.insert);
             this.Controls.Add(this.save);
             this.Controls.Add(this.label19);
@@ -2422,6 +2476,10 @@ namespace DosBoxZip2CFG
         private System.Windows.Forms.ToolTip dcctToolTip;
         private System.Windows.Forms.Button save;
         private System.Windows.Forms.Button insert;
+        public System.Windows.Forms.ComboBox driveMount;
+        private System.Windows.Forms.Label label14;
+        private System.Windows.Forms.Label label15;
+        public System.Windows.Forms.ComboBox isomountPath;
     }
 }
 
