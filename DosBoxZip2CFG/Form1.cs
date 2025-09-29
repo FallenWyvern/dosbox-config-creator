@@ -304,11 +304,12 @@ namespace DosBoxZip2CFG
                     }
 
                     while (deleteMe.Count > 0) {
+                        Console.WriteLine("Removing from list: " + deleteMe[0].Name);
                         if (MessageBox.Show("Conf File Detected: Delete " + deleteMe[0].Name + "?", "", MessageBoxButtons.YesNo) == DialogResult.Yes)
                         {
                             deleteMe[0].Delete();
                         }
-                        deleteMe.RemoveAt(0);
+                        deleteMe.RemoveAt(0);                        
                     }
 
                     archive.CreateEntryFromFile(sourceFilePath, entryNameInZip, CompressionLevel.Optimal);                    

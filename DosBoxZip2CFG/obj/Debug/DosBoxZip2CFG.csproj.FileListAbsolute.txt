@@ -36,3 +36,4 @@ C:\Users\b_hol\source\repos\DosBoxZip2CFG\dosbox-config-creator\DosBoxZip2CFG\ob
 C:\Users\b_hol\source\repos\DosBoxZip2CFG\dosbox-config-creator\DosBoxZip2CFG\obj\Debug\DosBoxZip2CFG.csproj.CopyComplete
 C:\Users\b_hol\source\repos\DosBoxZip2CFG\dosbox-config-creator\DosBoxZip2CFG\obj\Debug\DosBoxZip2CFG.exe
 C:\Users\b_hol\source\repos\DosBoxZip2CFG\dosbox-config-creator\DosBoxZip2CFG\obj\Debug\DosBoxZip2CFG.pdb
+C:\Users\b_hol\source\repos\DosBoxZip2CFG\dosbox-config-creator\DosBoxZip2CFG\obj\Debug\DosBoxZip2CFG.csproj.AssemblyReference.cache
