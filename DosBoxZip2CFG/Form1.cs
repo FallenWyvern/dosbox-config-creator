@@ -47,13 +47,37 @@ namespace DosBoxZip2CFG
         }
 
         private void listBox2_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            textBox1.Text = executableList.Text;
+        {            
+            if (executableList.Text.Contains('/'))
+            {
+                string fullPath = executableList.Text.Substring(0, executableList.Text.LastIndexOf('/')) + "/";
+                string filename = executableList.Text.Replace(fullPath, "");
+
+                string fileNameNoExt = filename.Substring(0, filename.LastIndexOf('.'));
+                if (fileNameNoExt.Length > 8)
+                {
+                    filename = filename.Substring(0, 6) + "~1" + filename.Replace(fileNameNoExt, "");
+                }
+
+                textBox1.Text = fullPath + filename;
+            }
         }
 
         private void listBox3_SelectedIndexChanged(object sender, EventArgs e)
         {
-            textBox2.Text = isoList.Text;
+            if (isoList.Text.Contains('/'))
+            {
+                string fullPath = isoList.Text.Substring(0, isoList.Text.LastIndexOf('/')) + "/";
+                string filename = isoList.Text.Replace(fullPath, "");
+
+                string fileNameNoExt = filename.Substring(0, filename.LastIndexOf('.'));
+                if (fileNameNoExt.Length > 8)
+                {
+                    filename = filename.Substring(0, 6) + "~1" + filename.Replace(fileNameNoExt, "");
+                }
+
+                textBox2.Text = fullPath + filename;
+            }
         }
 
         private void dosboxMemsize_ValueChanged(object sender, EventArgs e)
