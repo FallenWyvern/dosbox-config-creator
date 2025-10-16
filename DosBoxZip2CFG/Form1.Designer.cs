@@ -202,6 +202,7 @@ namespace DosBoxZip2CFG
             this.label14 = new System.Windows.Forms.Label();
             this.label15 = new System.Windows.Forms.Label();
             this.isomountPath = new System.Windows.Forms.ComboBox();
+            this.checkBox1 = new System.Windows.Forms.CheckBox();
             this.zipDropZone.SuspendLayout();
             this.configSettings.SuspendLayout();
             this.Core.SuspendLayout();
@@ -2248,11 +2249,22 @@ namespace DosBoxZip2CFG
             this.isomountPath.TabIndex = 43;
             this.isomountPath.Text = "d";
             // 
+            // checkBox1
+            // 
+            this.checkBox1.AutoSize = true;
+            this.checkBox1.Location = new System.Drawing.Point(230, 507);
+            this.checkBox1.Name = "checkBox1";
+            this.checkBox1.Size = new System.Drawing.Size(134, 17);
+            this.checkBox1.TabIndex = 45;
+            this.checkBox1.Text = "(Insert As dosbox.conf)";
+            this.checkBox1.UseVisualStyleBackColor = true;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1084, 540);
+            this.Controls.Add(this.checkBox1);
             this.Controls.Add(this.label15);
             this.Controls.Add(this.isomountPath);
             this.Controls.Add(this.label14);
@@ -2480,6 +2492,7 @@ namespace DosBoxZip2CFG
         private System.Windows.Forms.Label label14;
         private System.Windows.Forms.Label label15;
         public System.Windows.Forms.ComboBox isomountPath;
+        private System.Windows.Forms.CheckBox checkBox1;
     }
 }
 

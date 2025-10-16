@@ -258,15 +258,18 @@ namespace DosBoxZip2CFG
                     configFileOutput.Text += "cd/" + Environment.NewLine;
                 }
 
-                string exePath = textBox1.Text.Substring(0, textBox1.Text.LastIndexOf('/'));
-                string exeFile = textBox1.Text.Split('/')[textBox1.Text.Split('/').Count() - 1];
-
-                foreach (string pathPart in exePath.Split('/'))
+                if (textBox1.Text.Trim().Length > 3)
                 {
-                    configFileOutput.Text += "cd " + pathPart + Environment.NewLine;
-                }
+                    string exePath = textBox1.Text.Substring(0, textBox1.Text.LastIndexOf('/'));
+                    string exeFile = textBox1.Text.Split('/')[textBox1.Text.Split('/').Count() - 1];
 
-                configFileOutput.Text += exeFile + Environment.NewLine;
+                    foreach (string pathPart in exePath.Split('/'))
+                    {
+                        configFileOutput.Text += "cd " + pathPart + Environment.NewLine;
+                    }
+
+                    configFileOutput.Text += exeFile + Environment.NewLine;
+                }
             }
 
         }
@@ -315,12 +318,17 @@ namespace DosBoxZip2CFG
 
             if (isZip)
             {
+                if (checkBox1.Checked)
+                {
+                    entryNameInZip = "dosbox.conf";                    
+                }
+
                 using (ZipArchive archive = ZipFile.Open(zipFile, ZipArchiveMode.Update))
                 {
                     List<ZipArchiveEntry> deleteMe = new List<ZipArchiveEntry>();
                     foreach (var item in archive.Entries)
                     {                        
-                        if (item.Name.ToLower().Contains("conf"))
+                        if (item.Name.ToLower().Contains(".conf"))
                         {
                             Console.WriteLine(item.Name);
                             deleteMe.Add(item);
